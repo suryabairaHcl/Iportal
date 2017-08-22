@@ -1,0 +1,75 @@
+// Basic Colors
+$dark-blue:#2a445e;
+$navy: #093E72; /*this one was used before #00507d */ /* #2F4858 */      // Primary blue color //card
+$blue: /*#33658A*/  #007ebf /* #137fbd */;      // Blue color //card
+$light-blue:#30C5FF;  //
+$lazur: #5CC5BB; 
+$green: #9AC539; 
+$light_green: /* #9EE493 */ #9bc344; 
+$army_green: #C5D86D;
+$yellow: #F2E863;     // 
+$orange: #F6AE2D;
+$dark_orange: #F79256;
+$red: #FF645D;
+$danger-red: #E35954; // 
+$pink: #FF82A0;
+$purple: #90A8E3;
+$dark-gray: #2F4858;  // Default gray color
+$gray: #f3f3f4;       // Background wrapper color
+$light-gray: #D1DADE;  
+
+// New Nav Colors
+$nav_blue: #6CB7E5;
+$nav_green_1: #B1E9A8;
+$nav_green_2: #B9D873;
+$nav_orange: #F7BE57;
+$nav_orange_2: #F8A777;
+$nav_purple: #A2C7F3;
+$nav_pink: #FFB4C6;
+$nav_lazur: #9DDCD6;
+
+
+// Card Colors
+$card_white: #ffffff;
+$card_black:#151819; 
+$card_dark_blue: $navy;
+$card_blue: $blue;
+$card_blue_2: #1981B2;
+$card_light_blue: #009DDC;
+$card_gray: #CAD2C5;
+
+// Various colors
+$top_nav_active: #006EAD; 
+$text-color: #676a6c;   // Body text
+$label-badge-color: #5E5E5E;
+$divider: #77a2ba;
+$ifc_black: #16181A;
+$sidebar_blue: #394046;
+
+// Spiner color and margin
+$spin-color: $navy;
+$spin-margin: 0 auto;
+
+// IBOX colors ( default panel colors)
+$border-color: #e7eaec;     // IBox border
+$ibox-title-bg:#ffffff;     // IBox Background header
+$ibox-content-bg:#ffffff;   // IBox Background content
+
+//Sidebar width
+$sidebar-width: 220px;
+
+// Boxed layout width
+$boxed-width: 1200px;
+
+//Border radius for buttons
+$btn-border-radius: 3px;
+
+//Navigation
+$nav-bg: $navy;
+$nav-text-color: #a7b1c2;
+$side-nav-width-minimized: 60px;
+$side-nav-width-maximized: 220px;
+$side-nav-border-width: 4px;
+
+//Sizes (height/width/etc.)
+$top-bar-height: 60px;

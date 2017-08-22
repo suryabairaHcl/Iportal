@@ -1,0 +1,16 @@
+#help-footer{
+    position: fixed;
+    bottom: -9999px;
+    transition: all 0.5s ease-out;
+    background: $blue; 
+    min-height: 50vh;
+    width: 100%;
+    padding: 30px;
+    -webkit-box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.15);
+}
+
+#help-footer.fOpen{
+    bottom: 0;  
+}

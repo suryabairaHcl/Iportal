@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAY;EACR,QAAQ,EAAC,KAAK;EACd,MAAM,EAAC,OAAO;EACd,UAAU,EAAE,iBAAiB;EAC7B,UAAU,EAAC,OAAO;EAClB,UAAU,EAAC,IAAI;EACf,KAAK,EAAC,IAAI;EACV,OAAO,EAAC,IAAI;EACZ,kBAAkB,EAAE,qCAAkC;EACtD,eAAe,EAAE,qCAAkC;EACnD,UAAU,EAAE,qCAAkC;;AAGlD,kBAAkB;EACd,MAAM,EAAC,CAAC",
+"sources": ["help-footer.scss"],
+"names": [],
+"file": "help-footer.css"
+}

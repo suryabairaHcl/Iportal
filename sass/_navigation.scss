@@ -1,0 +1,358 @@
+/* top navigation bar */
+.navbar-top{
+	background: $blue;
+	width:100%;
+	height:$top-bar-height;
+	@include displayFlex;
+	@include flexJustifyContent (space-between);
+	@include flexAlignItems (center);
+	//position: relative; 
+	z-index: 20000;
+	border-width: !important;
+}
+.navbar-search{
+	@include displayFlex;
+	align-items: center;
+}
+.search-icon{
+	width:56px;
+	text-align:center;
+}
+.search-icon i {
+	font-size: 21px;
+}
+.navbar-search, .ifc-logo, .notification-icons{
+  @include flexSize (1);
+}
+.ifc-logo{
+  text-align:center;
+  @include flexSize (2);
+}
+.nt-dropdown{
+  display:inline-block !important;
+  .btn{
+    color: #fff;
+  }
+}
+.v-spacer{
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 10px;
+  margin: 0;
+  padding: 0;
+}
+/* navbar form */
+.navbar-form-custom {
+  padding: 0;
+  width: 200px;
+  display: block;
+  color:#fff !important;
+}
+.navbar-form-custom .form-group {
+  margin-bottom: 0;
+}
+.navbar-form-custom .form-control {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  font-size: 14px;
+  height: 60px;
+  margin: 0;
+  z-index: 2000;
+}
+.navbar-form-custom input::placeholder {
+  color: #fff !important;
+  font-weight:300;
+  font-family: "Roboto";
+}
+/* noification icons */
+.notification-icons{
+  height: $top-bar-height;
+}
+.navbar-top-links{
+  	@include displayFlex; 
+  	@include flexJustifyContent (flex-end);
+  	list-style: none;
+  	margin: 0;
+  	//margin-right: 15px;
+  	padding: 0;
+  	li{
+  	  padding: 0 15px;
+  	  //margin-right: 2px;
+  	  position:relative;
+  	  &:hover{
+  	    background: $navy;
+  	  }
+  	  a{
+  	    color:#fff;
+  	    line-height: $top-bar-height;
+  	    position: relative;
+  	  }
+  	  a.new-notification{
+  	    &:before{
+        	  content: url(../img/Rectangle-2.png);
+        	  display: block;
+        	  position:absolute;
+        	  top: -30px;
+        	  right: 14px;
+      	}
+  	  }
+  	}
+  	li.active{
+  	  background: $navy;
+  	  a.new-notification{
+  	    &:before{
+        	  content: "";
+      	}
+  	  }
+  	}
+  	li.active:after{
+      content: "";
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 13px 13px 0;
+      border-style: solid;
+      border-color: $navy transparent;
+      display: block;
+      width: auto;
+    }
+    li:last-child{
+      margin-right: 0;
+    }
+    i{
+    	font-size:24px;
+    }
+}
+/* ======================== */
+/* Main Side Navbar */
+.navbar-default ul:first-child.nav{
+  margin-top: 15px;
+}
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
+}
+.navbar-default {
+  background-color: $navy;
+  border-right: 4px solid $nav_blue; //??
+  min-height:100vh;
+}
+/* */
+body.mini-navbar .navbar-static-side {
+  flex: 0 0 60px;
+  transition: all 0.5s ease;
+}
+.navbar-static-side {
+  flex: 0 0 220px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
+}
+/* mini navbar */
+body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
+  font-size: 12px;
+  border-radius: 3px;
+}
+/**/
+body.mini-navbar .nav-label, body.mini-navbar .navbar-default .nav li a span {
+  display: none;
+}
+body.mini-navbar .navbar-default .nav li a span.help-support-icon {
+  display: block;
+}
+body.mini-navbar .navbar-default .nav > li > a {
+}
+/* .nav */
+.nav > li{
+  position: relative;
+}
+.navbar-default .nav > li a:focus{
+  background: none transparent;
+}
+.nav > li > a {
+  color: $nav-text-color;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+  z-index: 600;
+  line-height: 22px;
+}
+.nav i {
+    font-size: 22px;
+    display: inline-block;
+    margin: 0; 
+    padding: 15px 17px;
+}
+span.nav-label{
+}
+//li active classes
+.nav > li.activeNav, .nav > li.active{
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.nav > li.active, .nav li:hover, .nav li.activeNav {
+  i{
+    color: $navy;
+  }
+  a{
+    color: $navy;
+  }
+}
+.nav > li.active{
+  a{
+    font-weight: 500;
+  }
+}
+.nav > li.active:after, .nav > li.activeNav:after {
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    z-index: 300;
+}
+//
+.navbar-default .nav > li > a:hover{
+  transition: background-color 0.5s ease-in-out;
+}
+.navbar-default .nav > li.menu-divider a:hover{
+  background: none;
+}
+//colors for tabs 
+//home
+.navbar-default .nav > li.nav_blue > a:hover, .nav li.nav_blue.active{
+  background: $nav_blue; 
+}
+.nav li.nav_blue.active:after, nav li.nav_blue.activeNav:after{
+  content: url('../img/arrow-blue.png');
+}
+//
+.navbar-default .nav > li.nav_green_1 > a:hover, .nav li.nav_green_1.active{
+  background: $nav_green_1; 
+}
+.nav li.nav_green_1.activeNav:after{
+  content: url('../img/arrow-green-1.png');
+}
+//
+.navbar-default .nav > li.nav_green_2 > a:hover, .nav li.nav_green_2.active, .nav li.nav_green_2.activeNav{
+  background: $nav_green_2; 
+}
+.nav li.nav_green_2.activeNav:after{
+  content: url('../img/arrow-green-2.png');
+}
+//
+.navbar-default .nav > li.nav_orange > a:hover, .nav > li.nav_orange.active, .nav > li.nav_orange.activeNav{
+  background: $nav_orange; 
+}
+.nav > li.nav_orange.activeNav:after{
+  content: url('../img/arrow-orange.png');
+}
+//
+.navbar-default .nav > li.nav_orange_2 > a:hover, .nav > li.nav_orange_2.active{
+  background: $nav_orange_2; 
+}
+.nav li.nav_orange_2.activeNav:after{
+  content: url('../img/arrow-orange-2.png');
+}
+//
+.navbar-default .nav > li.nav_purple > a:hover, .nav > li.nav_purple.active{
+  background: $nav_purple; 
+}
+.nav li.nav_purple.activeNav:after{
+  content: url('../img/arrow-purple.png');
+}
+//
+.navbar-default .nav > li.nav_pink > a:hover, .nav > li.nav_pink.active{
+  background: $nav_pink; 
+}
+.nav li.nav_pink.activeNav:after{
+  content: url('../img/arrow-pink.png');
+}
+//
+.navbar-default .nav > li.nav_lazur > a:hover, .nav > li.nav_lazur.active{
+  background: $nav_lazur; 
+}
+.nav li.nav_lazur.activeNav:after{
+  content: url('../img/arrow-lazur.png');
+}
+/* */
+li.help-support a:hover, li.help-support a:focus{
+  background: darken($navy, 3%);
+  color:#fff;
+}
+li.help-support a i{
+  height: 52px;
+}
+/* help-support-icon */
+.help-support-icon{
+  display: inline-block;
+  height: 52px;
+  width: 22px;
+  text-align: center;
+  margin-right: 17px;
+}
+/* nav-second-level */
+.nav > li > .nav-second-level{
+  background: $ifc_black;
+  padding: 20px;
+  li{
+    padding:7px 0;
+    &:hover{
+      background: none transparent;
+    }
+  }
+  li.active{
+    a{
+      color:$blue;
+    }
+  }
+  a{
+    text-transform: none;
+    color: #F2F5EA;
+    font-size: 14px;
+    &:hover{
+      background: none transparent;
+      color:$blue;
+    }
+  }
+}
+
+
+body.navbarCollapsed .nav > li.active{
+  background: none;
+  i {
+    color: #fff;
+  }
+}
+body.navbarCollapsed .nav > li.activeNav{
+  i {
+    color: $navy;
+  }
+}
+
+body .nav > li.active.activeNav > .nav-second-level.collapse.in{
+  display: block;
+}
+
+body.navbarCollapsed .nav > li.active > .nav-second-level.collapse.in, body.navbarCollapsed .nav > li.activeNav > .nav-second-level.collapse.in {
+  display: none;
+}
+
+
+
+
+/* NC Icons */
+/*
+#side-menu li:hover i.nc-icon-outline, #side-menu li.active i.nc-icon-outline{
+  color: $navy;
+}
+*/
+
+.menu-divider hr{
+  color: $divider;
+  width: 22px;
+  margin: 15px 0 15px 17px;
+  border: 0;
+  border-top: 1px solid $divider;
+}

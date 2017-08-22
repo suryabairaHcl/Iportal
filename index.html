@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>IFC | iPortal</title>
+    
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins/bootstrapTour/bootstrap-tour.min.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+   
+    <div id="wrapper">
+    	
+        <div class="container-fluid">
+        	<div class="row">
+                <div class="navbar navbar-fixed-top navbar-top">
+                    <div class="navbar-search">
+                    	<div class="search-icon">
+                        	<i class="nc-icon-outline ui-1_zoom"></i> 
+                        </div>
+                        <img src="img/Path-2.png" alt="">
+                        
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search by keyword" class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ifc-logo">
+                    	<a href="index.html"><img src="img/iPortal-logo.png" alt="" /></a>
+                    	<span class="v-spacer"> | </span>
+                    	<!-- name & title dropdown -->
+                    	<div class="nt-dropdown">
+                                <div class="dropdown">
+                                  
+                                  <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <span class="caret"></span>
+                                    Elizabeth Shaddak | <span class="title">Investment Officer</span>
+                                    
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><a href="#">Investment Officer</a></li>
+                                    <li><a href="#">Portfolio Manager</a></li>
+                                    <li><a href="#">Manager</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Logout</a></li>
+                                  </ul>
+                                </div>
+                                
+                                
+                            </div>
+                    	
+                    	
+                    </div>
+                    <div class="notification-icons">
+                    	<ul class="navbar-top-links">
+                            <li class="" data-panel="tasks-sidebar">
+                                <a class="open-task count-info new-notification" href="#" >
+                                    <span class="">155</span>
+                                    <i class="nc-icon-outline design_todo"></i>  
+                                </a>  
+                            </li>
+                           
+                            <li class="" data-panel="notifications-sidebar">
+                                <a class="open-notifications count-info new-notification" href="#" >
+                                    <span class="">33</span>
+                                    <i class="nc-icon-outline ui-1_bell-53"></i>
+                                </a>
+                            </li>
+                            
+                           
+                            
+                    	</ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="pageWrapper">
+            
+            <nav class="navbar-default navbar-static-side" id="navbar-menu-side" role="navigation" class="animated">
+                <div class="sidebar-collapse">
+                    <ul class="nav metismenu" id="side-menu">
+                    
+                    
+                    <li class="active activeNav nav_blue">
+                        <a href="index.html" style="clear: both;"><i class="nc-icon-outline ui-1_home-51"></i> <span class="nav-label">Home</span> </a>
+                        
+                    </li>
+                    <li class="nav_green_1">
+                        <a href="project.html" class="nav_green_1"><i class="nc-icon-outline business_briefcase-24"></i> <span class="nav-label">Projects</span></a>
+                    </li>
+                    <li class="nav_green_2">
+                        <a href=""><i class="nc-icon-outline business_handshake"></i> <span class="nav-label">Partners</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="partners.html">Partners Page</a></li>
+                            <li><a href="">Menu Item</a></li>
+                            <li><a href="">Menu Item</a></li>
+                            <li><a href="">Menu Item</a></li>
+                            <li><a href="">Menu Item</a></li>
+                            <li><a href="">Menu Item</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_orange">
+                        <a href="" ><i class="nc-icon-outline users_contacts"></i> <span class="nav-label">Contacts </span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="contacts.html">Contacts Page</a></li>
+                            <li><a href="">Menu Item</a></li>
+                            <li><a href="">Menu Item</a></li>
+                            <li><a href="">Menu Item</a></li>
+                            <li><a href="">Menu Item</a></li>
+                            <li><a href="">Menu Item</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_orange_2">
+                        <a href=""><i class="nc-icon-outline business_chart-bar-33"></i> <span class="nav-label">Reporting</span>  </a>
+                    </li>
+                    <li class="nav_purple">
+                        <a href="admin.html"><i class="nc-icon-outline objects_key-26"></i> <span class="nav-label">Admin</span></a>
+                    </li>
+                   
+                    <li class="menu-divider"><a href=""><hr/></a></li>
+                    
+                    <li class="nav_pink">
+                        <a href="my-account.html"><i class="nc-icon-outline users_circle-10"></i> <span class="nav-label">My Account</span></a>
+                    </li>
+                    
+                    <li class="nav_lazur">
+                        <a href="settings.html"><i class="nc-icon-outline ui-1_preferences-circle"></i> <span class="nav-label">Settings</span></a>
+                    </li>
+                   
+                    <li class="menu-divider"><a href=""><hr/></a></li>
+                    
+                    <li class="help-support" id="my-other-element-1">
+                        <a href="#"><i><img src="img/help-support-icon.png" /></i> <span class="nav-label">Help &amp; Support</span></a>
+                    </li>
+                    
+                    
+                </ul>
+                </div>
+            </nav> 
+            <div class="pageWrap">
+    
+                   <div id="pageContent" class="gray-bg dashbard-1">
+                        
+                        
+                            <div class="primary-content border-bottom white-bg dashboard-header">
+                                 
+                                 
+                                 <div class="row">
+                                        <!-- masonary layout -->
+                                        <div class="grid">
+                                                <!-- grid sizer -->
+                                                <div class="grid-sizer col-xs-12 col-sm-6 col-md-4"></div>
+                                                 <!-- end of grid sizer -->
+                                                <div class="grid-item col-xs-12 col-md-8 ">
+                                                  <!-- add inner element for column content -->
+                                                  <div class="grid-item-content-height2 col-blue"></div>
+                                                </div>
+                                                <div class="grid-item col-xs-12 col-md-4 ">
+                                                  <div class="grid-item-content col-green">large 4/small 12</div>
+                                                </div>
+                                                <div class="grid-item col-xs-12 col-md-4 ">
+                                                  <div class="grid-item-content grid-item-content-height2 col-green"></div>
+                                                </div>
+                                                <div class="grid-item col-xs-12 col-md-4 ">
+                                                  <div class="grid-item-content col-green"></div>
+                                                </div>
+                                                <div class="grid-item col-xs-12 col-md-4 ">
+                                                  <div class="grid-item-content grid-item-content-height2 col-pink"></div>
+                                                </div>
+                                                
+                                                <div class="grid-item col-xs-12 col-md-4 ">
+                                                  <div class="grid-item-content-height2 col-pink"></div>
+                                                </div>
+                                                <div class="grid-item col-xs-12 col-md-4">
+                                                  <div class="grid-item-content col-pink"></div>
+                                                </div>
+                                             
+                                                <!-- 
+                                                <div class="grid-item col-xs-12 col-md-12">
+                                                  <div class="grid-item-content col-green"></div>
+                                                </div>
+                                                -->
+                                                
+                                                  <div class="grid-item col-xs-12 col-md-8">
+                                                  <div class="grid-item-content col-green"></div>
+                                                </div>
+                                                <div class="grid-item col-xs-12 col-md-4">
+                                                  <div class="grid-item-content col-pink"></div>
+                                                </div>
+                                                
+                                              </div> <!-- end of .grid -->
+                                        
+                                    </div><!-- end of row -->
+                            </div>
+                            <div class="secondary-content">
+                                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                                <div class="row">
+                                          <div class="col col-md-8">
+                                              <div class="ibox float-e-margins">
+                                                  <div class="ibox-title">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    
+                                                   
+                                                  </div>
+                                                  <div class="ibox-content">
+                                                    <div>
+                                                      <div class="pull-right text-right"> </div>
+                                                      <h4>Lorem ipsum dolor  </h4>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.<br/>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
+                                                    </div>
+                                                  </div>
+                                                </div></div>
+                                          <div class="col-md-6 col-md-4">
+                                              <div class="ibox float-e-margins">
+                                                  <div class="ibox-title">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    
+                                                  
+                                                  </div>
+                                                  <div class="ibox-content">
+                                                    <div>
+                                                      <div class="pull-right text-right"> </div>
+                                                      <h4>Lorem ipsum dolor  </h4>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                                        
+                                <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                                <div class="row">
+                                          <div class="col-md-6 col-md-4">
+                                              <div class="ibox float-e-margins">
+                                                  <div class="ibox-title">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    
+                                                    
+                                                  </div>
+                                                  <div class="ibox-content">
+                                                    <div>
+                                                      <div class="pull-right text-right"> </div>
+                                                      <h4>Lorem ipsum dolor  </h4>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6 col-md-4">
+                                              <div class="ibox float-e-margins">
+                                                  <div class="ibox-title">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    
+                                                    
+                                                  </div>
+                                                  <div class="ibox-content">
+                                                    <div>
+                                                      <div class="pull-right text-right"> </div>
+                                                      <h4>Lorem ipsum dolor  </h4>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
+                                                    </div>
+                                                  </div>
+                                                </div></div>
+                                          <div class="col-md-6 col-md-4">
+                                              <div class="ibox float-e-margins">
+                                                  <div class="ibox-title">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    
+                                                    
+                                                  </div>
+                                                  <div class="ibox-content">
+                                                    <div>
+                                                      <div class="pull-right text-right"> </div>
+                                                      <h4>Lorem ipsum dolor  </h4>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                                        
+                                <!-- Columns are always 50% wide, on mobile and desktop -->
+                                <div class="row">
+                                          <div class="col-md-6">
+                                              <div class="ibox float-e-margins">
+                                                  <div class="ibox-title">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    
+                                                    
+                                                  </div>
+                                                  <div class="ibox-content">
+                                                    <div>
+                                                      <div class="pull-right text-right"> </div>
+                                                      <h4>Lorem ipsum dolor  </h4>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
+                                                    </div>
+                                                  </div>
+                                                </div></div>
+                                          <div class="col-md-6">
+                                              <div class="ibox float-e-margins">
+                                                  <div class="ibox-title">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    
+                                                    
+                                                  </div>
+                                                  <div class="ibox-content">
+                                                    <div>
+                                                      <div class="pull-right text-right"> </div>
+                                                      <h4>Lorem ipsum dolor  </h4>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                            </div>   
+                            
+                            <div id="help-footer" class="help-footer">
+                                <div class="container">
+                                    <div class="row">
+                                         <h2 class="pull-left">Help & Support</h2>
+                                        <button type="button" class="btn btn-info pull-right closeFooter">[X]</button>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        
+                    </div>
+                    
+                    <!-- sidebars -->
+                    <div id="notifications-sidebar" class="fadeInRight animated rightNav">
+                        <div class="sidebarHeaderWrap">
+                            <div class="sidebar-heading">
+                            <h5>Notifications (3)</h5>
+                            <div class="">
+                                <div class="dropdown pull-left">
+                                  <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    All
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                  </ul>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                          </div>  
+                            
+                            <div class="sidebarWrap"> 
+                                <div class="sidebar-body">
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">PRoduct</p>
+                                   </div>
+                                    <div class="pull-right nDate">
+                                       <p>TODAY 9:25</p>
+                                   </div>
+                               </div>
+                                <div class="nSubtitle">
+                                       <p>Disbursement Booked</p>
+                                </div>
+                               <div class="notification-content">
+                                   <p>Agented Parallel loan disbursed on 08-01-2017 for USD $45,000 under the project “XYZ Project (46408)” for the Partner ETI (50427).</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">PDS CONCEPT</p>
+                                   </div>
+                                    <div class="pull-right nDate">
+                                       <p>Jul/01 16:22</p>
+                                   </div>
+                               </div>
+                                <div class="nSubtitle">
+                                       <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                               <div class="notification-content">
+                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">EPMS-VM</p>
+                                   </div>
+                                    <div class="pull-right nDate">
+                                       <p>Jul/01 16:22</p>
+                                   </div>
+                               </div>
+                                <div class="nSubtitle">
+                                       <p>- Option Expiring</p>
+                                </div>
+                               <div class="notification-content">
+                                   <p>Warrent (23456) for Trivon AG Waiver Trivax AG (556778) having Option excercises start date as of  03-Aug-2017 expiring on 01-Jul-2017.</p>
+                               </div>
+                           </div>
+                           
+                           <div class="sidebar-notification">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">PDS CONCEPT</p>
+                                   </div>
+                                    <div class="pull-right nDate">
+                                       <p>Jul/01 16:22</p>
+                                   </div>
+                               </div>
+                                <div class="nSubtitle">
+                                       <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                               <div class="notification-content">
+                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">PDS CONCEPT</p>
+                                   </div>
+                                    <div class="pull-right nDate">
+                                       <p>Jul/01 16:22</p>
+                                   </div>
+                               </div>
+                                <div class="nSubtitle">
+                                       <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                               <div class="notification-content">
+                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">PDS CONCEPT</p>
+                                   </div>
+                                    <div class="pull-right nDate">
+                                       <p>Jul/01 16:22</p>
+                                   </div>
+                               </div>
+                                <div class="nSubtitle">
+                                       <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                               <div class="notification-content">
+                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">PDS CONCEPT</p>
+                                   </div>
+                                    <div class="pull-right nDate">
+                                       <p>Jul/01 16:22</p>
+                                   </div>
+                               </div>
+                                <div class="nSubtitle">
+                                       <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                               <div class="notification-content">
+                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                               </div>
+                           </div>
+                        </div>
+                            </div>
+                        </div>
+                   
+                    <!-- end of #notifications-sidebar -->
+                    <div id="tasks-sidebar" class="fadeInRight animated rightNav">
+                        <div class="sidebarHeaderWrap">
+                            <div class="sidebar-heading">
+                                <div class = "sidebar-top">
+                                    <h5>Tasks</h5>
+                                    
+                                        <div class="dropdown">
+                                      <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Primary Role <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Primary Role</a></li>
+                                        <li><a href="#">Proxy Role</a></li>
+                                      </ul>
+                                </div>
+                                        <div>
+                                            <button type="button" class="btn btn-default btn-sidebar" data-toggle="modal" data-target="#myModal">
+                                             <i class="fa fa-filter" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    
+                                </div> 
+                                <div class = "sidebar-bottom">    
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Pending with me</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Pending with others</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebarWrap">
+                            <div class="sidebar-body">
+                           
+                          
+                           <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                  <div class="sidebar-notification notification-urgent">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">Internal Office Memorandum</p>
+                                   </div>
+                               </div>
+                                
+                               <div class="notification-content">
+                                   <p>First Level Clearance, Approval Pending with you.</p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                                   <p class="buttons">
+                                       <button type="button" class="btn btn-success">Approve</button>
+                                       <button type="button" class="btn btn-danger">Reject</button>
+                                  </p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-headline clearfix">
+                                   <div class="pull-left">
+                                       <p class="nTitle">Portfolio Assistant Approval</p>
+                                   </div>
+                               </div>
+                                
+                               <div class="notification-content">
+                                   <p>Initiate Document Approval for project</p>
+                                   <p><a href="#">Africa Clean Eneregy (13450) </a></p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                                   <p class="buttons">
+                                       <button type="button" class="btn btn-success">Approve</button>
+                                       <button type="button" class="btn btn-danger">Reject</button>
+                                  </p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-content">
+                                   <p class="nTitle"><a href="">Create new partner</a> | for IDB France</p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-content">
+                                   <p class="nTitle">Review Document</p>
+                                   <p><a href="">IDCfinancil_document.pdf </a>| IDB France</p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-content">
+                                   <p class="nTitle">Handover NBP</p>
+                                   <p>Setup & Initiate Approval Unclaimed</p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-content">
+                                   <p class="nTitle">Review Document</p>
+                                   <p><a href="">IDCfinancil_document.pdf </a>| IDB France</p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-content">
+                                   <p class="nTitle">Handover NBP</p>
+                                   <p>Setup & Initiate Approval Unclaimed</p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-content">
+                                   <p class="nTitle">Review Document</p>
+                                   <p><a href="">IDCfinancil_document.pdf </a>| IDB France</p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                               </div>
+                           </div>
+                           <div class="sidebar-notification notification-urgent">
+                               <div class="notification-content">
+                                   <p class="nTitle">Handover NBP</p>
+                                   <p>Setup & Initiate Approval Unclaimed</p>
+                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
+                               </div>
+                           </div>
+                              </div>
+                              <div role="tabpanel" class="tab-pane fade" id="profile">Here will be tasks pending with others</div>
+                            </div>
+
+                        </div>
+                        </div>
+                    </div>
+                    <!-- end of #tasks-sidebar -->
+                   
+
+            </div><!-- end of .pageWrap -->
+        
+        </div>
+    
+    
+    </div><!-- end of #wrapper -->
+
+    <!-- Main framework scripts -->
+    <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <!-- <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+   <!-- Bootstrap Tour -->
+   <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
+   
+   <!-- Custom and plugin javascript -->
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    
+    <script src="js/plugins/masonary/masonry.pkgd.min.js"></script>
+    
+
+    <script src="js/custom.js"></script>
+    
+   
+   
+    
+</body>
+</html>

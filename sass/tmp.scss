@@ -1,0 +1,142 @@
+/* temporary css for testing */
+#side-menu{
+  position: fixed;
+}
+#navbar-menu-side{
+  position: fixed;
+  z-index: 30;
+  width: $side-nav-width-minimized;
+  //width: $side-nav-width-maximized; //remove
+  .nav li{
+    width: $side-nav-width-minimized - $side-nav-border-width;
+    //width: $side-nav-width-maximized - $side-nav-border-width;
+    //background: yellow;
+    a{
+      //text-indent: -9999px;
+      display:flex;
+      @include flexAlignItems (center);
+      //background: red;
+    }
+    a i{
+    }
+    span{
+     display: none;
+     opacity: 0;
+    -webkit-transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    transition: opacity .6s;
+    }
+    span.nav-label{
+      width: 100%; //change
+    }
+  }
+}
+#navbar-menu-side:hover{
+  width: $side-nav-width-maximized;
+  .nav > li{
+    width: $side-nav-width-maximized - $side-nav-border-width;
+    span{
+      display: inline-block;
+      opacity: .999;
+    }
+  }
+}
+.pageWrap{
+    position: relative;
+    z-index: 20;
+    //margin-left: $side-nav-width-minimized + 10;
+}
+.pageWrapper{
+    position: relative;
+    z-index: 20;
+    @include displayFlex;
+    min-height: 100vh;
+    padding-top: $top-bar-height;
+}
+//my account tab added
+li.my-account {
+  padding: 0;
+  border-left: 1px solid $navy;
+  a{
+    display: inline-block;
+    text-indent: -9999px;
+    width: 60px;
+  }
+}
+
+/*
+//
+#notifications-sidebar{
+  //position: relative;
+  //z-index: 20;
+  .sidebar-body{
+    .sidebar-notification{
+      transition: all 0.5s ease-in-out;
+      &:hover{
+        background: #CCC;
+      }
+    }
+  }
+  //
+  //sidebar-notification-secondary
+  .sidebar-notification-secondary{
+    display: block;
+    min-height: 100vh;
+    background: yellow;
+    width: 30em;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 30em;
+    
+  }
+}
+*/
+
+
+.grid-item{
+  margin: 0;
+  margin-bottom: 20px;
+  .ibox{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    //background: #ccc !important;
+  }
+}
+.grid-item-content {
+  min-height: 100px;
+  background: #ccc;
+  //border: 2px solid hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+.grid-item-content-height2 { 
+  min-height: 300px; 
+  border-radius: 5px;
+}
+.col-pink{
+  background: pink;
+}
+.col-green{
+  background: green;
+}
+.col-blue{
+  background: blue;
+}
+//
+//
+//
+.sidebarOpen{
+  margin-right: 40em;
+}
+.sidebarWrap{
+  max-height: 100vh;
+  overflow-y: scroll;
+  //background: yellow;
+  //padding: 200px 0 200px 0;
+}
+.sidebarHeaderWrap{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

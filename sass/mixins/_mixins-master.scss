@@ -1,0 +1,77 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+/* General Mixins */
+//flex mixins
+//@include displayFlex;
+@mixin displayFlex {
+	display: -webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+}
+//@include flexColumn;
+@mixin flexColumn {
+	webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+//
+//@include flexSize ($fsize);
+@mixin flexSize ($fsize){
+	-webkit-flex:$fsize;
+    -ms-flex: $fsize;
+    flex: $fsize;
+}
+//@include flexJustifyContent ($justify);
+//flex justify content: flex-start, flex-end, center, space-between, space-around 
+@mixin flexJustifyContent ($justify){
+	-webkit-justify-content: $justify;
+    -ms-flex-pack: $justify;
+    justify-content: $justify;
+	
+}
+//@include flexAlignItems ($align);
+//flex align items: flex-start, flex-end, center, baseline, stretch
+@mixin flexAlignItems ($align){
+	-webkit-align-items: $align;
+	-ms-flex-pack: $align;
+	align-items: $align;
+}
+//@include flexOrder($order);
+//flex order
+@mixin flexOrder ($order){
+	-webkit-order: $order;
+	-ms-flex-order: $order;
+	order: $order;
+}
+//@include width100noMarginnoPadding;
+@mixin width100noMarginnoPadding{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+//@include ulList;
+@mixin ulList{
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
