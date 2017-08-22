@@ -249,8 +249,8 @@ body.mini-navbar .navbar-default .nav li a span.help-support-icon {
   padding: 15px 17px; }
 
 .nav > li.activeNav, .nav > li.active {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
+  -webkit-transition: all .05s ease-in-out;
+  transition: all .05s ease-in-out; }
 
 .nav > li.active i, .nav li:hover i, .nav li.activeNav i {
   color: #093E72; }
@@ -4347,8 +4347,8 @@ body.mini-navbar.fixed-sidebar .logo-element {
   overflow: hidden;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
-  -webkit-transition-duration: .35s;
-  transition-duration: .35s;
+  -webkit-transition-duration: .05s;
+  transition-duration: .05s;
   -webkit-transition-property: height, visibility;
   transition-property: height, visibility; }
 

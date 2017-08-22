@@ -189,8 +189,8 @@ span.nav-label{
 }
 //li active classes
 .nav > li.activeNav, .nav > li.active{
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .05s ease-in-out;
+  transition: all .05s ease-in-out;
 }
 .nav > li.active, .nav li:hover, .nav li.activeNav {
   i{
