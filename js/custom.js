@@ -39,34 +39,6 @@ $(document).ready(function () {
 	   openTask.parent().removeClass('active');
 	}
 	//
-	//
-	// 
-	//TO FIX
-    //open sidebars on icon clicks
-    //create open function with vars
-    //
-    function openIFCSidebar(sidebar){
-        //alert( $(this).attr('class') );
-        sidebar.toggleClass('rOpen tasksOpen');
-        $(this).parent().toggleClass('active'); //not working?
-        //
-        if(!sidebar.hasClass('rOpen') ){
-            alert('not open');
-            //$("a.open-task i").removeClass('nc-icon-glyph');
-            $(this).removeClass('active');
-        }
-        //
-        if( $('.rOpen').length > 0 ){
-	        $('#pageContent').addClass('sidebarOpen');
-	    }else{
-	        $('#pageContent').removeClass('sidebarOpen'); 
-	    }
-    }
-    
-    
-    
-    
-   
 	openTask.on('click', function () {
             tasksSidebar.toggleClass('rOpen tasksOpen');
             notificationsSidebar.removeClass('rOpen');
@@ -88,8 +60,7 @@ $(document).ready(function () {
 	        }
             
     });
-    
-    
+    //
     openNotifications.on('click', function () {
             //$('#pageContent').toggleClass('sidebarOpen');
             notificationsSidebar.toggleClass('rOpen notificationsOpen');
@@ -110,8 +81,7 @@ $(document).ready(function () {
 	            $('#pageContent').removeClass('sidebarOpen'); 
 	        }
     });
-   
-
+    //
     //help footer
     $('.help-support a').on('click', function () {
         $('#help-footer').toggleClass('fOpen');

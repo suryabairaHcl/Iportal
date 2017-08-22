@@ -8,9 +8,9 @@ Error: Undefined variable: "$text-color".
 4:   color: $text-color;
 5:   overflow-x: hidden;
 6: }
-7: 
-8: html, body {
-9:   height: 100%;
+7: html, body {
+8:   height: 100%;
+9: }
 
 Backtrace:
 /home/ubuntu/workspace/sass/_base.scss:4
@@ -63,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text-color\".\A         on line 4 of /home/ubuntu/workspace/sass/_base.scss\A \A 1: body {\A 2:   font-family: \"Roboto\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\A 3:   font-size: 13px;\A 4:   color: $text-color;\A 5:   overflow-x: hidden;\A 6: }\A 7: \A 8: html, body {\A 9:   height: 100%;"; }
+  content: "Error: Undefined variable: \"$text-color\".\A         on line 4 of /home/ubuntu/workspace/sass/_base.scss\A \A 1: body {\A 2:   font-family: \"Roboto\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\A 3:   font-size: 13px;\A 4:   color: $text-color;\A 5:   overflow-x: hidden;\A 6: }\A 7: html, body {\A 8:   height: 100%;\A 9: }"; }
