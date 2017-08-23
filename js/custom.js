@@ -168,9 +168,9 @@ $(document).ready(function () {
     trueOuterHeight = parseInt(trueOuterHeight);
     //alert(trueOuterHeight +20);
     sidebarWrap.css({
-        "padding-top" : trueOuterHeight + 20,
+        "padding-top" : trueOuterHeight + 25,
         "padding-right" : '0',
-        "padding-bottom" : '200px',
+        "padding-bottom" : '100px',
         "padding-left" : '0'
         
     });

@@ -20,10 +20,9 @@
 }
 .sidebar-heading{
   padding:0 20px;
-  //min-height: $top-bar-height;
-  font-weight:300;
-  background: #94A0AD;
-  color:#fff;
+  font-weight: 300;
+  background: #DEDEDE;
+  border-bottom: 1px solid #ccc;
   .sidebar-top{
     @include displayFlex;
     @include flexJustifyContent (space-between);
@@ -36,7 +35,6 @@
     font-size:20px;
     text-transform:uppercase;
     font-weight:300;
-    //line-height: $top-bar-height;
     margin:0;
     padding:0;
     flex: 2;
@@ -48,7 +46,7 @@
   font-weight: 300;
   .sidebar-notification{
     border-bottom: 1px solid #d1caca;
-    padding: 30px 20px;
+    padding: 15px 20px;
     color: $sidebar_blue;
     .nTitle{
       font-weight:500;
@@ -65,8 +63,6 @@
       color: #bbb;
     }
     .notification-content{
-      //border-bottom:1px solid $sidebar_blue;
-      //padding-bottom:20px;
       p{
         margin: 0;
         padding: 0;
@@ -127,7 +123,7 @@
   width: 100%;
 }
 .ifc-tabs{
-  margin-bottom: -1px;
+  //margin-bottom: -1px;
   .nav-tabs{
     border-bottom: none;
   }

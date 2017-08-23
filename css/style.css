@@ -2792,8 +2792,8 @@ body.tour-open .animated {
 .sidebar-heading {
   padding: 0 20px;
   font-weight: 300;
-  background: #94A0AD;
-  color: #fff; }
+  background: #DEDEDE;
+  border-bottom: 1px solid #ccc; }
   .sidebar-heading .sidebar-top {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2819,7 +2819,7 @@ body.tour-open .animated {
   font-weight: 300; }
   .sidebar-body .sidebar-notification {
     border-bottom: 1px solid #d1caca;
-    padding: 30px 20px;
+    padding: 15px 20px;
     color: #394046; }
     .sidebar-body .sidebar-notification .nTitle {
       font-weight: 500;
@@ -2878,10 +2878,8 @@ body.tour-open .animated {
   top: 0;
   width: 100%; }
 
-.ifc-tabs {
-  margin-bottom: -1px; }
-  .ifc-tabs .nav-tabs {
-    border-bottom: none; }
+.ifc-tabs .nav-tabs {
+  border-bottom: none; }
 
 .ifc-tabs .nav-tabs > li.active > a,
 .ifc-tabs .nav-tabs > li.active > a:focus,

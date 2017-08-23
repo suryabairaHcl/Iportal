@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'displayFlex'.
-        on line 28 of /home/ubuntu/workspace/sass/_sidebar.scss, in `displayFlex'
-        from line 28 of /home/ubuntu/workspace/sass/_sidebar.scss
+        on line 27 of /home/ubuntu/workspace/sass/_sidebar.scss, in `displayFlex'
+        from line 27 of /home/ubuntu/workspace/sass/_sidebar.scss
 
-23:   //min-height: $top-bar-height;
-24:   font-weight:300;
-25:   background: #94A0AD;
-26:   color:#fff;
-27:   .sidebar-top{
-28:     @include displayFlex;
-29:     @include flexJustifyContent (space-between);
-30:     @include flexAlignItems (center);
-31:     padding-top: 15px;
-32:   }
-33:   .sidebar-bottom{
+22:   padding:0 20px;
+23:   font-weight: 300;
+24:   background: #DEDEDE;
+25:   border-bottom: 1px solid #ccc;
+26:   .sidebar-top{
+27:     @include displayFlex;
+28:     @include flexJustifyContent (space-between);
+29:     @include flexAlignItems (center);
+30:     padding-top: 15px;
+31:   }
+32:   .sidebar-bottom{
 
 Backtrace:
-/home/ubuntu/workspace/sass/_sidebar.scss:28:in `displayFlex'
-/home/ubuntu/workspace/sass/_sidebar.scss:28
+/home/ubuntu/workspace/sass/_sidebar.scss:27:in `displayFlex'
+/home/ubuntu/workspace/sass/_sidebar.scss:27
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -80,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'displayFlex'.\A         on line 28 of /home/ubuntu/workspace/sass/_sidebar.scss, in `displayFlex'\A         from line 28 of /home/ubuntu/workspace/sass/_sidebar.scss\A \A 23:   //min-height: $top-bar-height;\A 24:   font-weight:300;\A 25:   background: #94A0AD;\A 26:   color:#fff;\A 27:   .sidebar-top{\A 28:     @include displayFlex;\A 29:     @include flexJustifyContent (space-between);\A 30:     @include flexAlignItems (center);\A 31:     padding-top: 15px;\A 32:   }\A 33:   .sidebar-bottom{"; }
+  content: "Error: Undefined mixin 'displayFlex'.\A         on line 27 of /home/ubuntu/workspace/sass/_sidebar.scss, in `displayFlex'\A         from line 27 of /home/ubuntu/workspace/sass/_sidebar.scss\A \A 22:   padding:0 20px;\A 23:   font-weight: 300;\A 24:   background: #DEDEDE;\A 25:   border-bottom: 1px solid #ccc;\A 26:   .sidebar-top{\A 27:     @include displayFlex;\A 28:     @include flexJustifyContent (space-between);\A 29:     @include flexAlignItems (center);\A 30:     padding-top: 15px;\A 31:   }\A 32:   .sidebar-bottom{"; }
