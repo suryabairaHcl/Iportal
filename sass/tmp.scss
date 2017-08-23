@@ -140,3 +140,12 @@ li.my-account {
   top: 0;
   width: 100%;
 }
+.search-bar{
+    background: white !important;
+    border: medium none;
+    font-size: 14px;
+    height: 28px !important;
+    // margin-left:-5px !important;
+    margin: 0;
+    z-index: 2000;
+}

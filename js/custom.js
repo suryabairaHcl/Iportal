@@ -204,5 +204,29 @@ $(document).ready(function () {
         "padding-left" : '0'
         
     });
+    //Auto complete
+     $('.form-control').mouseenter( function () {
+      $('.form-control').addClass('search-bar');
+    });
+      $('.form-control').mouseleave( function () {
+      $('.form-control').removeClass('search-bar');
+    });
+    
+    var data = [
+                     "GTFP AB Burkina",
+                     "AB Bank Rwanda",
+                     "AEFB Tacks Farm",
+                     "GMAC WHLPRST Farm",
+                       "PRST Farm"
+                            
+                        ];
+
+                    //create AutoComplete UI component
+                    $("#top-search").kendoAutoComplete({
+                        dataSource: data,
+                        filter: "startswith",
+                        placeholder: "Select Project",
+                        separator: ", "
+                    });
     
 }); //end of document ready
