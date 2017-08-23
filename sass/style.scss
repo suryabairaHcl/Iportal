@@ -29,6 +29,12 @@ Theme Name: World Bank - IFC - iPortal
 @import "../font-awesome/css/font-awesome.css";
 /* Animate */
 @import "../css/animate.css";
+//Bootstrap Tour
+@import "../css/plugins/bootstrapTour/bootstrap-tour.min.css";
+//Kendo UI
+@import url("https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.common-material.min.css");
+@import url("https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.material.min.css");
+@import url("https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.material.mobile.min.css");
 /* ------- end of 3rd party files ------- */
 /* ------- ---------------------- ------- */
 /* ------ IFC Stylesheets --------------- */

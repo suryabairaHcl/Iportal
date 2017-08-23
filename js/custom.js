@@ -225,7 +225,7 @@ $(document).ready(function () {
                     $("#top-search").kendoAutoComplete({
                         dataSource: data,
                         filter: "startswith",
-                        placeholder: "Select Project",
+                        placeholder: "Search by Keyword",
                         separator: ", "
                     });
     
