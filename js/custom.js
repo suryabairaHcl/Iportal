@@ -168,11 +168,14 @@ $(document).ready(function () {
     trueOuterHeight = parseInt(trueOuterHeight);
     //alert(trueOuterHeight +20);
     sidebarWrap.css({
-        "padding-top" : trueOuterHeight + 30,
+        "padding-top" : trueOuterHeight + 20,
         "padding-right" : '0',
         "padding-bottom" : '200px',
         "padding-left" : '0'
         
     });
-    
+    //Open lightbox for Tasks
+    $('.lLink').on('click', function() {
+        alert('lightbox here');
+    });
 }); //end of document ready
