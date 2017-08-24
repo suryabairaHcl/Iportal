@@ -84,7 +84,6 @@
         </div>
         
         <div class="pageWrapper">
-            
             <nav class="navbar-default navbar-static-side" id="navbar-menu-side" role="navigation" class="animated">
                 <div class="sidebar-collapse">
                     <ul class="nav metismenu" id="side-menu">
@@ -147,13 +146,9 @@
                 </div>
             </nav> 
             <div class="pageWrap">
-    
+                    <!-- Page Content -->
                    <div id="pageContent" class="gray-bg dashbard-1">
-                        
-                        
                             <div class="primary-content border-bottom white-bg dashboard-header">
-                                 
-                                 
                                  <div class="row">
                                         <!-- masonary layout -->
                                         <div class="grid">
@@ -162,16 +157,16 @@
                                                  <!-- end of grid sizer -->
                                                 <div class="grid-item col-xs-12 col-md-8 ">
                                                   <!-- add inner element for column content -->
-                                                  <div class="grid-item-content-height2 col-blue"></div>
+                                                  <div class="grid-item-content-height2 col-pink"></div>
                                                 </div>
                                                 <div class="grid-item col-xs-12 col-md-4 ">
-                                                  <div class="grid-item-content col-green">large 4/small 12</div>
+                                                  <div class="grid-item-content col-pink">large 4/small 12</div>
                                                 </div>
                                                 <div class="grid-item col-xs-12 col-md-4 ">
-                                                  <div class="grid-item-content grid-item-content-height2 col-green"></div>
+                                                  <div class="grid-item-content grid-item-content-height2 col-pink"></div>
                                                 </div>
                                                 <div class="grid-item col-xs-12 col-md-4 ">
-                                                  <div class="grid-item-content col-green"></div>
+                                                  <div class="grid-item-content col-pink"></div>
                                                 </div>
                                                 <div class="grid-item col-xs-12 col-md-4 ">
                                                   <div class="grid-item-content grid-item-content-height2 col-pink"></div>
@@ -184,14 +179,14 @@
                                                   <div class="grid-item-content col-pink"></div>
                                                 </div>
                                              
-                                                <!-- 
+                            
                                                 <div class="grid-item col-xs-12 col-md-12">
-                                                  <div class="grid-item-content col-green"></div>
+                                                  <div class="grid-item-content col-pink"></div>
                                                 </div>
-                                                -->
+                                                
                                                 
                                                   <div class="grid-item col-xs-12 col-md-8">
-                                                  <div class="grid-item-content col-green"></div>
+                                                  <div class="grid-item-content col-pink"></div>
                                                 </div>
                                                 <div class="grid-item col-xs-12 col-md-4">
                                                   <div class="grid-item-content col-pink"></div>
@@ -324,7 +319,7 @@
                                           </div>
                                         </div>
                             </div>   
-                            
+                            <!-- help footer -->
                             <div id="help-footer" class="help-footer">
                                 <div class="container">
                                     <div class="row">
@@ -334,33 +329,29 @@
                                 </div>
                                
                             </div>
-                        
                     </div>
-                    
-                    <!-- sidebars -->
+                    <!-- end of #pageContent -->
+                    <!-- Sidebars -->
+                    <!-- Notifications Sidebar -->
                     <div id="notifications-sidebar" class="fadeInRight animated rightNav">
                         <div class="sidebarHeaderWrap">
                             <div class="sidebar-heading">
-                            <h5>Notifications (3)</h5>
-                            <div class="">
-                                <div class="dropdown pull-left">
-                                  <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    All
-                                    <span class="caret"></span>
-                                  </button>
-                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                  </ul>
+                                <div class = "sidebar-top">
+                                    <h5>Notifications (5)</h5>
+                                    
+                                    <div>
+                                            <button type="button" class="btn btn-default btn-sidebar" data-toggle="modal" data-target="#myModal">
+                                             <i class="fa fa-filter" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    
                                 </div>
-                                
-                                
+                                <div class = "sidebar-bottom"></div>
                             </div>
-                        </div>
-                          </div>  
+                        </div> 
+                            
+                            
+                            
                             
                             <div class="sidebarWrap"> 
                                 <div class="sidebar-body">
@@ -480,8 +471,8 @@
                         </div>
                             </div>
                         </div>
-                   
                     <!-- end of #notifications-sidebar -->
+                    <!-- Tasks Sidebar -->
                     <div id="tasks-sidebar" class="fadeInRight animated rightNav">
                         <div class="sidebarHeaderWrap">
                             <div class="sidebar-heading">
@@ -506,122 +497,176 @@
                                 </div> 
                                 <div class = "sidebar-bottom">    
                                     <!-- Nav tabs -->
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active">
-                                            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Pending with me</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Pending with others</a>
-                                        </li>
-                                    </ul>
+                                    <div class="ifc-tabs">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active">
+                                                <a href="#my-tasks" aria-controls="home" role="tab" data-toggle="tab">Pending with me (6)</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#tasks-other" aria-controls="profile" role="tab" data-toggle="tab">Pending with others (2)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="sidebarWrap">
                             <div class="sidebar-body">
+                               <div class="tab-content">
+                                  <div role="tabpanel" class="tab-pane fade in active" id="my-tasks">
+                                  
+                                   <div class="sidebar-notification notification-urgent">
+                                      <div class="notification-headline clearfix">
+                                           <div class="pull-left">
+                                                <p class="nTitle">
+                                                   <a href="#" class="lLink" id="" data-lightbox="">PDS Change Approval</a>
+                                                </p>
+                                           </div>
+                                           <div class="pull-right">
+                                               <p class="nDate warning">2 Days Overdue</p>
+                                           </div>
+                                       </div>
+                                       <div class="notification-content">
+                                           <p><span class="nLabel">Workflow Name:</span>Manager Approve</p> 
+                                           <p><span class="nLabel">Stage:</span> Supervision</p>
+                                           <p><span class="nLabel">Project:</span> GTFP AB Burkina | 43328</p>
+                                   
+                                       </div>
+                                  </div>
+                                   <div class="sidebar-notification notification-urgent">
+                                      <div class="notification-headline clearfix">
+                                           <div class="pull-left">
+                                                <p class="nTitle">
+                                                   <a href="#" class="lLink" id="" data-lightbox="">PDS Concept Approval</a>
+                                                </p>
+                                           </div>
+                                           <div class="pull-right">
+                                               <p class="nDate">Due in 5 Days</p>
+                                           </div>
+                                       </div>
+                                       <div class="notification-content">
+                                           <p><span class="nLabel">Workflow Name:</span>Manager Approve</p> 
+                                           <p><span class="nLabel">Stage:</span>Business Development</p>
+                                           <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
+                                   
+                                       </div>
+                                  </div>
+                                  
+                                   <div class="sidebar-notification">
+                                      <div class="notification-headline clearfix">
+                                           <div class="pull-left">
+                                                <p class="nTitle">
+                                                   <a href="#" class="lLink" id="" data-lightbox="">COMPLETE PD RATING</a>
+                                                </p>
+                                           </div>
+                                           <div class="pull-right">
+                                               <p class="nDate">Jul/19 10:00</p>
+                                           </div>
+                                       </div>
+                                       <div class="notification-content">
+                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p> 
+                                       </div>
+                                  </div>
+                                   <div class="sidebar-notification">
+                                      <div class="notification-headline clearfix">
+                                           <div class="pull-left">
+                                                <p class="nTitle">
+                                                   <a href="#" class="lLink" id="" data-lightbox="">PD RATING APPROVAL</a>
+                                                </p>
+                                           </div>
+                                           <div class="pull-right">
+                                               <p class="nDate">Jul/22 10:00</p>
+                                           </div>
+                                       </div>
+                                       <div class="notification-content">
+                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p> 
+                                       </div>
+                                  </div>
+                                   <div class="sidebar-notification">
+                                      <div class="notification-headline clearfix">
+                                           <div class="pull-left">
+                                                <p class="nTitle">
+                                                   <a href="#" class="lLink" id="" data-lightbox="">COMPLETE LGD RATING</a>
+                                                </p>
+                                           </div>
+                                           <div class="pull-right">
+                                               <p class="nDate">Jul/23 10:00</p>
+                                           </div>
+                                       </div>
+                                       <div class="notification-content">
+                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                           <p><span class="nLabel">Project:</span>Africa IC | 43242</p> 
+                                       </div>
+                                  </div>
+                                   <div class="sidebar-notification">
+                                      <div class="notification-headline clearfix">
+                                           <div class="pull-left">
+                                                <p class="nTitle">
+                                                   <a href="#" class="lLink" id="" data-lightbox="">LGD RATING APPROVAL</a>
+                                                </p>
+                                           </div>
+                                           <div class="pull-right">
+                                               <p class="nDate">Jul/24 10:00</p>
+                                           </div>
+                                       </div>
+                                       <div class="notification-content">
+                                           <p><span class="nLabel">Workflow Name:</span>PM Approve</p>
+                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                           <p><span class="nLabel">Project:</span>Africa IC | 43242</p> 
+                                       </div>
+                                  </div>
                            
-                          
-                           <div class="tab-content">
-                              <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                  <div class="sidebar-notification notification-urgent">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">Internal Office Memorandum</p>
-                                   </div>
-                               </div>
-                                
-                               <div class="notification-content">
-                                   <p>First Level Clearance, Approval Pending with you.</p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                                   <p class="buttons">
-                                       <button type="button" class="btn btn-success">Approve</button>
-                                       <button type="button" class="btn btn-danger">Reject</button>
-                                  </p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">Portfolio Assistant Approval</p>
-                                   </div>
-                               </div>
-                                
-                               <div class="notification-content">
-                                   <p>Initiate Document Approval for project</p>
-                                   <p><a href="#">Africa Clean Eneregy (13450) </a></p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                                   <p class="buttons">
-                                       <button type="button" class="btn btn-success">Approve</button>
-                                       <button type="button" class="btn btn-danger">Reject</button>
-                                  </p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-content">
-                                   <p class="nTitle"><a href="">Create new partner</a> | for IDB France</p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-content">
-                                   <p class="nTitle">Review Document</p>
-                                   <p><a href="">IDCfinancil_document.pdf </a>| IDB France</p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-content">
-                                   <p class="nTitle">Handover NBP</p>
-                                   <p>Setup & Initiate Approval Unclaimed</p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-content">
-                                   <p class="nTitle">Review Document</p>
-                                   <p><a href="">IDCfinancil_document.pdf </a>| IDB France</p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-content">
-                                   <p class="nTitle">Handover NBP</p>
-                                   <p>Setup & Initiate Approval Unclaimed</p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-content">
-                                   <p class="nTitle">Review Document</p>
-                                   <p><a href="">IDCfinancil_document.pdf </a>| IDB France</p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-content">
-                                   <p class="nTitle">Handover NBP</p>
-                                   <p>Setup & Initiate Approval Unclaimed</p>
-                                   <p class="nDate">Due: 12:32 PM, 12/02/2017</p>
-                               </div>
-                           </div>
                               </div>
-                              <div role="tabpanel" class="tab-pane fade" id="profile">Here will be tasks pending with others</div>
+                                  <div role="tabpanel" class="tab-pane fade in" id="tasks-other">
+                                   <div class="sidebar-notification notification-urgent">
+                                      <div class="notification-headline clearfix">
+                                           <div class="pull-left">
+                                                <p class="nTitle">
+                                                   <a href="#" class="lLink" id="" data-lightbox="">PD RATING APPROVAL</a>
+                                                </p>
+                                           </div>
+                                           <div class="pull-right">
+                                               <p class="nDate warning">3 Days Overdue</p>
+                                           </div>
+                                       </div>
+                                       <div class="notification-content">
+                                           <p><span class="nLabel">Workflow Name:</span>PM Approve</p> 
+                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                           <p><span class="nLabel">Pending with:</span>John Hayes</p>
+                                   
+                                       </div>
+                                  </div>
+                                   <div class="sidebar-notification notification-urgent">
+                                      <div class="notification-headline clearfix">
+                                           <div class="pull-left">
+                                                <p class="nTitle">
+                                                   <a href="#" class="lLink" id="" data-lightbox="">PDS Concept Approval</a>
+                                                </p>
+                                           </div>
+                                           <div class="pull-right">
+                                               <p class="nDate">Due in 5 Days</p>
+                                           </div>
+                                       </div>
+                                       <div class="notification-content">
+                                           <p><span class="nLabel">Workflow Name:</span>PM Approve</p> 
+                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                           <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
+                                           <p><span class="nLabel">Pending with:</span>John Hayes</p>
+                                   
+                                       </div>
+                                  </div>
+                              </div>
                             </div>
-
-                        </div>
+                            </div>
                         </div>
                     </div>
                     <!-- end of #tasks-sidebar -->
-                   
-
             </div><!-- end of .pageWrap -->
+        </div><!-- end of .pageWrapper -->
         
-        </div>
-    
-    
     </div><!-- end of #wrapper -->
 
-    <!-- Main framework scripts -->
+    <!-- Main framework scripts //use CDN links -->
     <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- jQuery UI -->
@@ -629,23 +674,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- Latest compiled and minified Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-   
-   <!-- Bootstrap Tour -->
-   <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
-   <!-- Kendo js plugins-->
+
+    <!-- JS Plugins -->
+    <!-- Bootstrap Tour -->
+    <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
+    <!-- Kendo js plugins-->
     <script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
-   
-   <!-- Custom and plugin javascript -->
+    <!-- other plugins -->
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    
     <script src="js/plugins/masonary/masonry.pkgd.min.js"></script>
-    
-
+    <!-- Bootstrap Tour -->
+    <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
+    <!-- custom jQuery script -->
     <script src="js/custom.js"></script>
-    
-   
-   
     
 </body>
 </html>

@@ -1,0 +1,27 @@
+.grid-item{
+  margin: 0;
+  margin-bottom: 20px;
+  .ibox{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+}
+.grid-item-content {
+  min-height: 100px;
+  background: #ccc;
+  //border: 2px solid hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+.grid-item-content-height2 { 
+  min-height: 300px; 
+  border-radius: 5px;
+}
+.col-pink{
+  background: pink;
+}
+.col-green{
+  background: green;
+}
+.col-blue{
+  background: blue;
+}

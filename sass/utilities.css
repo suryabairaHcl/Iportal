@@ -1,20 +1,21 @@
 /*
-Error: Undefined variable: "$text-color".
-        on line 4 of /home/ubuntu/workspace/sass/_base.scss
+Error: Undefined variable: "$warning".
+        on line 2 of /home/ubuntu/workspace/sass/utilities.scss
 
-1: body {
-2:   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-3:   font-size: 13px;
-4:   color: $text-color;
-5:   overflow-x: hidden;
+1: .warning{
+2:     color: $warning !important;
+3: }
+4: .success{
+5:     color: $success !important;
 6: }
-7: html, body {
-8:   height: 100%;
-9: }
 
 Backtrace:
-/home/ubuntu/workspace/sass/_base.scss:4
+/home/ubuntu/workspace/sass/utilities.scss:2
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `map'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `_perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -63,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text-color\".\A         on line 4 of /home/ubuntu/workspace/sass/_base.scss\A \A 1: body {\A 2:   font-family: \"Roboto\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\A 3:   font-size: 13px;\A 4:   color: $text-color;\A 5:   overflow-x: hidden;\A 6: }\A 7: html, body {\A 8:   height: 100%;\A 9: }"; }
+  content: "Error: Undefined variable: \"$warning\".\A         on line 2 of /home/ubuntu/workspace/sass/utilities.scss\A \A 1: .warning{\A 2:     color: $warning !important;\A 3: }\A 4: .success{\A 5:     color: $success !important;\A 6: }"; }

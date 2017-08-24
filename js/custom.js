@@ -39,34 +39,6 @@ $(document).ready(function () {
 	   openTask.parent().removeClass('active');
 	}
 	//
-	//
-	// 
-	//TO FIX
-    //open sidebars on icon clicks
-    //create open function with vars
-    //
-    function openIFCSidebar(sidebar){
-        //alert( $(this).attr('class') );
-        sidebar.toggleClass('rOpen tasksOpen');
-        $(this).parent().toggleClass('active'); //not working?
-        //
-        if(!sidebar.hasClass('rOpen') ){
-            alert('not open');
-            //$("a.open-task i").removeClass('nc-icon-glyph');
-            $(this).removeClass('active');
-        }
-        //
-        if( $('.rOpen').length > 0 ){
-	        $('#pageContent').addClass('sidebarOpen');
-	    }else{
-	        $('#pageContent').removeClass('sidebarOpen'); 
-	    }
-    }
-    
-    
-    
-    
-   
 	openTask.on('click', function () {
             tasksSidebar.toggleClass('rOpen tasksOpen');
             notificationsSidebar.removeClass('rOpen');
@@ -88,8 +60,7 @@ $(document).ready(function () {
 	        }
             
     });
-    
-    
+    //
     openNotifications.on('click', function () {
             //$('#pageContent').toggleClass('sidebarOpen');
             notificationsSidebar.toggleClass('rOpen notificationsOpen');
@@ -110,8 +81,7 @@ $(document).ready(function () {
 	            $('#pageContent').removeClass('sidebarOpen'); 
 	        }
     });
-   
-
+    //
     //help footer
     $('.help-support a').on('click', function () {
         $('#help-footer').toggleClass('fOpen');
@@ -188,6 +158,7 @@ $(document).ready(function () {
     
     //TO FIX
     //get the height of sidebar div
+    /*
     var sidebarHeaderWrap =  $('.sidebarHeaderWrap');
     var outerHeight = sidebarHeaderWrap.outerHeight();
     var trueOuterHeight = sidebarHeaderWrap.outerHeight(true);
@@ -198,12 +169,13 @@ $(document).ready(function () {
     trueOuterHeight = parseInt(trueOuterHeight);
     //alert(trueOuterHeight +20);
     sidebarWrap.css({
-        "padding-top" : trueOuterHeight + 30,
+        "padding-top" : trueOuterHeight + 25,
         "padding-right" : '0',
-        "padding-bottom" : '200px',
+        "padding-bottom" : '100px',
         "padding-left" : '0'
         
     });
+    */
     //Auto complete
      $('.form-control').mouseenter( function () {
       $('.form-control').addClass('search-bar');
@@ -228,5 +200,9 @@ $(document).ready(function () {
                         placeholder: "Search by Keyword",
                         separator: ", "
                     });
-    
+                    
+    //Open lightbox for Tasks
+    $('.lLink').on('click', function() {
+        alert('lightbox will be here');
+    });
 }); //end of document ready

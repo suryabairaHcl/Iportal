@@ -54,54 +54,13 @@
     min-height: 100vh;
     padding-top: $top-bar-height;
 }
-//my account tab added
-li.my-account {
-  padding: 0;
-  border-left: 1px solid $navy;
-  a{
-    display: inline-block;
-    text-indent: -9999px;
-    width: 60px;
-  }
-}
-
-/*
-//
-#notifications-sidebar{
-  //position: relative;
-  //z-index: 20;
-  .sidebar-body{
-    .sidebar-notification{
-      transition: all 0.5s ease-in-out;
-      &:hover{
-        background: #CCC;
-      }
-    }
-  }
-  //
-  //sidebar-notification-secondary
-  .sidebar-notification-secondary{
-    display: block;
-    min-height: 100vh;
-    background: yellow;
-    width: 30em;
-    position: absolute;
-    z-index: 20;
-    top: 0;
-    right: 30em;
-    
-  }
-}
-*/
-
-
+//masonry grid
 .grid-item{
   margin: 0;
   margin-bottom: 20px;
   .ibox{
     border: 1px solid #ddd;
     border-radius: 5px;
-    //background: #ccc !important;
   }
 }
 .grid-item-content {
@@ -124,16 +83,12 @@ li.my-account {
   background: blue;
 }
 //
-//
-//
 .sidebarOpen{
   margin-right: 40em;
 }
 .sidebarWrap{
   max-height: 100vh;
   overflow-y: scroll;
-  //background: yellow;
-  //padding: 200px 0 200px 0;
 }
 .sidebarHeaderWrap{
   position: fixed;
@@ -145,7 +100,6 @@ li.my-account {
     border: medium none;
     font-size: 14px;
     height: 28px !important;
-    // margin-left:-5px !important;
     margin: 0;
     z-index: 2000;
 }
