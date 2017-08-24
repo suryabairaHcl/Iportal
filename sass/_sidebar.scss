@@ -19,7 +19,8 @@
    right: 0;
 }
 .sidebar-heading{
-  padding:0 20px;
+  min-height: 76px;
+  padding: 0 20px;
   font-weight: 300;
   background: #DEDEDE;
   border-bottom: 1px solid #ccc;
@@ -44,6 +45,7 @@
 .sidebar-body{
   font-size: 16px;
   font-weight: 300;
+  padding-top: 76px;
   .sidebar-notification{
     border-bottom: 1px solid #d1caca;
     padding: 15px 20px;

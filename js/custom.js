@@ -158,6 +158,7 @@ $(document).ready(function () {
     
     //TO FIX
     //get the height of sidebar div
+    /*
     var sidebarHeaderWrap =  $('.sidebarHeaderWrap');
     var outerHeight = sidebarHeaderWrap.outerHeight();
     var trueOuterHeight = sidebarHeaderWrap.outerHeight(true);
@@ -174,8 +175,9 @@ $(document).ready(function () {
         "padding-left" : '0'
         
     });
+    */
     //Open lightbox for Tasks
     $('.lLink').on('click', function() {
-        alert('lightbox here');
+        alert('lightbox will be here');
     });
 }); //end of document ready

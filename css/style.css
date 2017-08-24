@@ -2790,6 +2790,7 @@ body.tour-open .animated {
   right: 0; }
 
 .sidebar-heading {
+  min-height: 76px;
   padding: 0 20px;
   font-weight: 300;
   background: #DEDEDE;
@@ -2816,7 +2817,8 @@ body.tour-open .animated {
 
 .sidebar-body {
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-top: 76px; }
   .sidebar-body .sidebar-notification {
     border-bottom: 1px solid #d1caca;
     padding: 15px 20px;
