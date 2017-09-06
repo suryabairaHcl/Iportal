@@ -2,11 +2,14 @@
 .rightNav {
   /* 22em is the width of the sidebars */
   //flex: 0 0 30em;
-  width: 30em;
+  // max-width: 37em;
+  width:25.33%;
+  float:left;
+  min-height:1px;
   //flex-basis: 30em;
 }
 .rightNav{
-   margin: 0 -30em 0 0;
+   margin: 0 -25.33% 0 0;
    -webkit-transition: all 0.5s ease-in-out;
    transition: all 0.5s ease-in-out;
    background:#DEDEDE /* #f2f2f2 */;
@@ -29,13 +32,21 @@
     @include flexJustifyContent (space-between);
     @include flexAlignItems (center);
     padding-top: 15px;
+    padding-right: 10px;
+  }
+  .sidebar-title{
+    font-size:18px;
+    font-family:'Roboto-Medium', 'Roboto Medium', 'Roboto';
+    font-style:normal;
+    font-weight:500;
+    color:#424D5C;
   }
   .sidebar-bottom{
   }
   h5{
-    font-size:20px;
+    font-size:18px;
     text-transform:uppercase;
-    font-weight:300;
+    font-weight:500;
     margin:0;
     padding:0;
     flex: 2;
@@ -45,23 +56,24 @@
 .sidebar-body{
   font-size: 16px;
   font-weight: 300;
+  font-family: "Roboto";
   padding-top: 76px;
   .sidebar-notification{
     border-bottom: 1px solid #d1caca;
     padding: 15px 20px;
     color: $sidebar_blue;
     .nTitle{
-      font-weight:500;
+      font-weight:400;
       text-transform: uppercase;
     }
     .nDate{
       color: #777777;
     }
     .nLabel{
-      font-size: 85%;
+      font-size: 100%;
       display: inline-block;
       margin-right: 5px;
-      font-weight: 500;
+      font-weight: 300;
       color: #bbb;
     }
     .notification-content{
@@ -75,7 +87,7 @@
     }
   }
   a{
-    font-weight:500;
+    font-weight:400;
   }
 }
 .sidebar-notification.notification-urgent{
@@ -104,6 +116,7 @@
 #pageContent .row {
   margin-right: 15px;
   margin-left: 15px;
+  width:93%;
 }
 .primary-content{
   padding:30px 0;
@@ -130,6 +143,10 @@
     border-bottom: none;
   }
 }
+.notification-content {
+    font-size: 14px;
+    font-family:Roboto;
+}
 .ifc-tabs .nav-tabs>li.active>a, 
 .ifc-tabs .nav-tabs>li.active>a:focus, 
 .ifc-tabs.nav-tabs>li.active>a:hover{
@@ -139,6 +156,8 @@
   border-bottom: 1px solid #666;
 }
 .ifc-tabs .nav-tabs > li > a {
-  padding: 5px;
-  font-size: 12px;
+  padding: 5px; 
+  font-family: "Roboto";
+  padding-right: 15px;
+  font-size: 14px;
 }

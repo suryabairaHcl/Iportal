@@ -96,10 +96,13 @@
   width: 100%;
 }
 .search-bar{
-    background: white !important;
-    border: medium none;
+    // opacity: 0.8 !important;
+    background: #fff !important;
+    border: #E87722 !important;
+    color:#BFCED6 !important;
     font-size: 14px;
+    width: 320px !important;
     height: 28px !important;
-    margin: 0;
+    // margin-left: -px !important;
     z-index: 2000;
 }

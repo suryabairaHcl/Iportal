@@ -189,17 +189,17 @@ span.nav-label{
 }
 //li active classes
 .nav > li.activeNav, .nav > li.active{
-  -webkit-transition: all .05s ease-in-out;
-  transition: all .05s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
-.nav > li.active, .nav li:hover, .nav li.activeNav {
-  i{
-    color: $navy;
-  }
-  a{
-    color: $navy;
-  }
-}
+// .nav > li.active, .nav li:hover, .nav li.activeNav {
+//   i{
+//     color: $navy;
+//   }
+//   a{
+//     color: $navy;
+//   }
+// }
 .nav > li.active{
   a{
     font-weight: 500;
@@ -221,57 +221,118 @@ span.nav-label{
 }
 //colors for tabs 
 //home
-.navbar-default .nav > li.nav_blue > a:hover, .nav li.nav_blue.active{
-  background: $nav_blue; 
+.navbar-default .nav > li.nav_blue > a:hover,.nav li.nav_blue.active{
+    i{
+    color: $nav_blue;
+  }
+   color: $nav_blue;
+  background:none;
+}
+.nav li.nav_blue.activeNav,.nav li.nav_blue.activeNav > a:hover{
+       i{
+    color: $navy !important;
+  }
+   color:$navy !important;
+   background:$nav_blue;
 }
 .nav li.nav_blue.active:after, nav li.nav_blue.activeNav:after{
   content: url('../img/arrow-blue.png');
 }
 //
-.navbar-default .nav > li.nav_green_1 > a:hover, .nav li.nav_green_1.active{
-  background: $nav_green_1; 
+.navbar-default .nav > li.nav_green_1 > a:hover{
+  i{
+    color: $nav_green_1;
+  }
+   color: $nav_green_1;
+  background:none;
+}
+.nav li.nav_green_1.active.nav,li.nav_green_1.activeNav,.nav li.nav_green_1.active > a:hover{
+         i{
+    color: $navy !important;
+  }
+   color:$navy !important;
+   background:$nav_green_1;
 }
 .nav li.nav_green_1.activeNav:after{
   content: url('../img/arrow-green-1.png');
 }
 //
-.navbar-default .nav > li.nav_green_2 > a:hover, .nav li.nav_green_2.active, .nav li.nav_green_2.activeNav{
-  background: $nav_green_2; 
+.navbar-default .nav > li.nav_green_2 > a:hover, .nav li.nav_green_2.active{
+  i{
+    color: $nav_green_2;
+  }
+   color: $nav_green_2;
+  background:none;
 }
+ .nav li.nav_green_2.activeNav,.nav li.nav_green_2.activeNav > a:hover{
+     i{
+    color: $navy !important;
+  }
+   color:$navy !important;
+   background:$nav_green_2;
+ }
 .nav li.nav_green_2.activeNav:after{
   content: url('../img/arrow-green-2.png');
 }
 //
-.navbar-default .nav > li.nav_orange > a:hover, .nav > li.nav_orange.active, .nav > li.nav_orange.activeNav{
-  background: $nav_orange; 
+.navbar-default .nav > li.nav_orange > a:hover, .nav > li.nav_orange.active{
+    i{
+    color: $nav_orange;
+  }
+   color: $nav_orange;
+  background:none;
 }
+ .nav > li.nav_orange.activeNav, .nav > li.nav_orange.activeNav > a:hover{
+        i{
+    color: $navy !important;
+  }
+   color:$navy !important;
+   background:$nav_orange;
+ }
 .nav > li.nav_orange.activeNav:after{
   content: url('../img/arrow-orange.png');
 }
 //
 .navbar-default .nav > li.nav_orange_2 > a:hover, .nav > li.nav_orange_2.active{
-  background: $nav_orange_2; 
+      i{
+    color: $nav_orange_2;
+  }
+   color: $nav_orange_2;
+  background:none;
 }
 .nav li.nav_orange_2.activeNav:after{
   content: url('../img/arrow-orange-2.png');
 }
 //
 .navbar-default .nav > li.nav_purple > a:hover, .nav > li.nav_purple.active{
-  background: $nav_purple; 
+        i{
+    color: $nav_purple;
+  }
+    color: $nav_purple;
+  background:none;
+  
 }
 .nav li.nav_purple.activeNav:after{
   content: url('../img/arrow-purple.png');
 }
 //
 .navbar-default .nav > li.nav_pink > a:hover, .nav > li.nav_pink.active{
-  background: $nav_pink; 
+          i{
+    color: $nav_pink;
+  }
+    color: $nav_pink;
+  background:none;
 }
 .nav li.nav_pink.activeNav:after{
   content: url('../img/arrow-pink.png');
 }
 //
 .navbar-default .nav > li.nav_lazur > a:hover, .nav > li.nav_lazur.active{
-  background: $nav_lazur; 
+            i{
+    color: $nav_lazur;
+  }
+    color: $nav_lazur;
+  background:none;
 }
 .nav li.nav_lazur.activeNav:after{
   content: url('../img/arrow-lazur.png');

@@ -2,6 +2,7 @@ $(document).ready(function () {
     //
     //alert("jquery is on");
     /* global $ */
+    
     // MetisMenu
     var sideMenu = $('#side-menu');
     sideMenu.metisMenu();
@@ -17,10 +18,13 @@ $(document).ready(function () {
      $('#navbar-menu-side').on('mouseenter', function () {
 		$("body").toggleClass("navbarCollapsed");
 		$('.nav span').fadeTo('fast', 100);
+// 		$(".nav-second-level").toggleClass("in");
     }).on('mouseleave', function () {
 		$("body").toggleClass("navbarCollapsed");
+		$(".nav-second-level").removeClass("in");
+		$(".nav li").removeClass("active");
 		$('.nav span').hide();
-	});
+	})
 	//
 	// Right Sidebars
 	var openTask = $('a.open-task');
@@ -41,7 +45,7 @@ $(document).ready(function () {
 	//
 	openTask.on('click', function () {
             tasksSidebar.toggleClass('rOpen tasksOpen');
-            notificationsSidebar.removeClass('rOpen');
+            notificationsSidebar.removeClass('rOpen notificationsOpen');
             $(this).parent().toggleClass('active');
             openNotifications.parent().removeClass('active');
             // 
@@ -73,6 +77,7 @@ $(document).ready(function () {
             //
             if( !notificationsSidebar.hasClass('rOpen') ){
                 $("a.open-notifications i").removeClass('nc-icon-glyph');
+                $(this).removeClass('active');
             }
             //
             if( $('.rOpen').length > 0 ){
@@ -177,12 +182,19 @@ $(document).ready(function () {
     });
     */
     //Auto complete
-     $('.form-control').mouseenter( function () {
+     $('.form-control').on('click', function () {
       $('.form-control').addClass('search-bar');
     });
-      $('.form-control').mouseleave( function () {
-      $('.form-control').removeClass('search-bar');
+    $('.form-control').mouseenter( function () {
+    $('.k-state-focused').removeClass('k-state-hover');
     });
+      $('.form-control').mouseleave( function () {
+      $('.k-state-focused').removeClass('k-state-hover');
+      $('.form-control').removeClass('search-bar');
+      
+    });
+    
+  
     
     var data = [
                      "GTFP AB Burkina",
@@ -200,7 +212,23 @@ $(document).ready(function () {
                         placeholder: "Search by Keyword",
                         separator: ", "
                     });
+                    //
+//       	$("nav li").click(function() {
+// 		$("nav li").removeClass("activeNav"); // Remove any active class
+// 		$(this).addClass("activeNav"); // Add "current" class to selected tab
+		
+// 		$("div.sidebar-collapse div").hide(); // Hide all content
+
+//     // Find the href attribute value to identify the active tab + content:
+// 		var activeTab = $(this).find("a").attr("href"); 
+// 		$(activeTab).fadeIn(); //Fade in the active ID content
+// 	}); // end click method
+         //
+         $("nav li.nav_green_1").click(function() {
+		$("nav li.nav_blue").removeClass("active activeNav");
+         });
                     
+                    //
     //Open lightbox for Tasks
     $('.lLink').on('click', function() {
         alert('lightbox will be here');
