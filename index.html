@@ -8,669 +8,988 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>IFC | iPortal</title>
-    
+
     <!-- main css stylesheet that imports all the styles (see ../sass/style.scss for reference) -->
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body class="">
-   
+
     <div id="wrapper">
-    	
+  
         <div class="container-fluid">
-        	<div class="row">
+            <div class="row">
                 <div class="navbar navbar-fixed-top navbar-top">
-                    <div class="navbar-search">
-                    	<div class="search-icon">
-                        	<i class="nc-icon-outline ui-1_zoom"></i> 
-                        </div>
-                        <img src="img/Path-2.png" alt="">
-                        
-                        <form role="search" class="navbar-form-custom" action="search_results.html">
-                            <div class="form-group">
-                                <input type="text" placeholder="Search by keyword" class="form-control" name="top-search" id="top-search">
-                            </div>
-                        </form>
-                    </div>
                     <div class="ifc-logo">
-                    	<a href="index.html"><img src="img/iPortal-logo.png" alt="" /></a>
-                    	<span class="v-spacer"> | </span>
-                    	<!-- name & title dropdown -->
-                    	<div class="nt-dropdown">
-                                <div class="dropdown">
-                                  
-                                  <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    <span class="caret"></span>
-                                    Elizabeth Shaddak | <span class="title">Investment Officer</span>
-                                    
-                                  </button>
-                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <a href="index.html"><img src="img/iportal.png" alt="" /></a>
+                        <span class="v-spacer"> | </span>
+                    </div>    
+                    <div class="navbar-search">
+                        <div class="search-icon">
+                            <i class="nc-icon-outline ui-1_zoom"></i>
+                        </div>
+
+                        <!--<form role="search" class="navbar-form-custom" action="search_results.html">-->
+                                <input class="search" placeholder="Search By Keyword" name="top-search" id="top-search">
+                        <!--</form>-->
+                    </div>
+                    <div class="accnt-view">
+                        <a href="index.html"><img src="img/account.png" alt="" /></a>
+                    </div>  
+                    <div class="ifc-view">
+                        <div class="nt-dropdown">
+                            <div class="dropdown">
+
+                                <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                     <span class="title">Operational View</span><span class="fa arrow"></span><span class="caret"></span>
+                                    </button>
+                                
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                     <li><a href="#">Investment Officer</a></li>
                                     <li><a href="#">Portfolio Manager</a></li>
                                     <li><a href="#">Manager</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#">Logout</a></li>
-                                  </ul>
-                                </div>
-                                
-                                
+                                </ul>
                             </div>
-                    	
-                    	
+
+                        </div>
+
                     </div>
                     <div class="notification-icons">
-                    	<ul class="navbar-top-links">
+                        <ul class="navbar-top-links">
                             <li class="" data-panel="tasks-sidebar">
-                                <a class="open-task count-info new-notification" href="#" >
+                                <a class="open-task count-info new-notification" href="#">
                                     <span class="">155</span>
-                                    <i class="nc-icon-outline design_todo"></i>  
-                                </a>  
+                                    <i class="nc-icon-glyph design_todo"></i>
+                                </a>
                             </li>
-                           
+
                             <li class="" data-panel="notifications-sidebar">
-                                <a class="open-notifications count-info new-notification" href="#" >
-                                    <span class="">33</span>
+                                <a class="open-notifications count-info new-notification" href="#">
                                     <i class="nc-icon-outline ui-1_bell-53"></i>
                                 </a>
                             </li>
-                            
-                           
-                            
-                    	</ul>
-                    </div>  
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        
         <div class="pageWrapper">
-            <nav class="navbar-default navbar-static-side" id="navbar-menu-side" role="navigation" class="animated">
+         
+            <div class="pageWrap">
+                <nav class="navbar-default navbar-static-side" id="navbar-menu-side" role="navigation" class="animated">
                 <div class="sidebar-collapse">
                     <ul class="nav metismenu" id="side-menu">
+
+                        <li class="active activeNav nav_blue">
+                            <a href="index.html" style="clear: both;"><i class="nc-icon-outline ui-1_home-51"></i> <span class="nav-label">Home</span> </a>
+
+                        </li>
+                        <li class="nav_green_1">
+                            <a href="" class="nav_green_1"><i class="nc-icon-outline business_briefcase-24"></i> <span class="nav-label">Projects</span></a>
+                        </li>
+                        <li class="nav_green_2">
+                            <a href=""><i class="nc-icon-outline business_handshake"></i> <span class="nav-label">Partners</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="partners.html">Partners Page</a></li>
+                                <li><a href="">Menu Item</a></li>
+                                <li><a href="">Menu Item</a></li>
+                                <li><a href="">Menu Item</a></li>
+                                <li><a href="">Menu Item</a></li>
+                                <li><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_purple">
+                            <a href="activities.html"><i class="nc-icon-outline design-2_microsoft"></i> <span class="nav-label">Activities</span></a>
+                        </li>
+                        <li class="nav_orange">
+                            <a href=""><i class="nc-icon-outline users_contacts"></i> <span class="nav-label">Contacts </span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="contacts.html">Contacts Page</a></li>
+                                <li><a href="">Menu Item</a></li>
+                                <li><a href="">Menu Item</a></li>
+                                <li><a href="">Menu Item</a></li>
+                                <li><a href="">Menu Item</a></li>
+                                <li><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_orange_2">
+                            <a href=""><i class="nc-icon-outline business_chart-bar-33"></i> <span class="nav-label">Reporting</span>  </a>
+                        </li>
+                        <li class="nav_purple">
+                            <a href="admin.html"><i class="nc-icon-outline objects_key-26"></i> <span class="nav-label">Admin</span></a>
+                        </li>
                     
-                    
-                    <li class="active activeNav nav_blue">
-                        <a href="index.html" style="clear: both;"><i class="nc-icon-outline ui-1_home-51"></i> <span class="nav-label">Home</span> </a>
-                        
-                    </li>
-                    <li class="nav_green_1">
-                        <a href="" class="nav_green_1"><i class="nc-icon-outline business_briefcase-24"></i> <span class="nav-label">Projects</span></a>
-                    </li>
-                    <li class="nav_green_2">
-                        <a href=""><i class="nc-icon-outline business_handshake"></i> <span class="nav-label">Partners</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="partners.html">Partners Page</a></li>
-                            <li><a href="">Menu Item</a></li>
-                            <li><a href="">Menu Item</a></li>
-                            <li><a href="">Menu Item</a></li>
-                            <li><a href="">Menu Item</a></li>
-                            <li><a href="">Menu Item</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_orange">
-                        <a href="" ><i class="nc-icon-outline users_contacts"></i> <span class="nav-label">Contacts </span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="contacts.html">Contacts Page</a></li>
-                            <li><a href="">Menu Item</a></li>
-                            <li><a href="">Menu Item</a></li>
-                            <li><a href="">Menu Item</a></li>
-                            <li><a href="">Menu Item</a></li>
-                            <li><a href="">Menu Item</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_orange_2">
-                        <a href=""><i class="nc-icon-outline business_chart-bar-33"></i> <span class="nav-label">Reporting</span>  </a>
-                    </li>
-                    <li class="nav_purple">
-                        <a href="admin.html"><i class="nc-icon-outline objects_key-26"></i> <span class="nav-label">Admin</span></a>
-                    </li>
-                   
-                    <li class="menu-divider"><a href=""><hr/></a></li>
-                    
-                    <li class="nav_pink">
-                        <a href="my-account.html"><i class="nc-icon-outline users_circle-10"></i> <span class="nav-label">My Account</span></a>
-                    </li>
-                    
-                    <li class="nav_lazur">
-                        <a href="settings.html"><i class="nc-icon-outline ui-1_preferences-circle"></i> <span class="nav-label">Settings</span></a>
-                    </li>
-                   
-                    <li class="menu-divider"><a href=""><hr/></a></li>
-                    
-                    <li class="help-support" id="my-other-element-1">
-                        <a href="#"><i><img src="img/help-support-icon.png" /></i> <span class="nav-label">Help &amp; Support</span></a>
-                    </li>
-                    
-                    
-                </ul>
+                        <li class="menu-divider">
+                            <a href="">
+                                <hr/>
+                            </a>
+                        </li>
+
+                        <li class="help-support" id="my-other-element-1">
+                            <a href="#"><span class="nav-label">Help &amp; Support</span><i class="help-icon"><img src="img/help1.png" /></i></a>
+                        </li>
+
+                    </ul>
                 </div>
-            </nav> 
-            <div class="pageWrap">
-                    <!-- Page Content -->
-                   <div id="pageContent" class="gray-bg dashbard-1">
-                            <div class="primary-content border-bottom white-bg dashboard-header">
-                                 <div class="row">
-                                        <!-- masonary layout -->
-                                        <div class="grid">
-                                                <!-- grid sizer -->
-                                                <div class="grid-sizer col-xs-12 col-sm-6 col-md-4"></div>
-                                                 <!-- end of grid sizer -->
-                                                <div class="grid-item col-xs-12 col-md-8 ">
-                                                  <!-- add inner element for column content -->
-                                                  <div class="grid-item-content-height2 col-pink"></div>
-                                                </div>
-                                                <div class="grid-item col-xs-12 col-md-4 ">
-                                                  <div class="grid-item-content col-pink">large 4/small 12</div>
-                                                </div>
-                                                <div class="grid-item col-xs-12 col-md-4 ">
-                                                  <div class="grid-item-content grid-item-content-height2 col-pink"></div>
-                                                </div>
-                                                <div class="grid-item col-xs-12 col-md-4 ">
-                                                  <div class="grid-item-content col-pink"></div>
-                                                </div>
-                                                <div class="grid-item col-xs-12 col-md-4 ">
-                                                  <div class="grid-item-content grid-item-content-height2 col-pink"></div>
-                                                </div>
-                                                
-                                                <div class="grid-item col-xs-12 col-md-4 ">
-                                                  <div class="grid-item-content-height2 col-pink"></div>
-                                                </div>
-                                                <div class="grid-item col-xs-12 col-md-4">
-                                                  <div class="grid-item-content col-pink"></div>
-                                                </div>
-                                             
-                            
-                                                <div class="grid-item col-xs-12 col-md-12">
-                                                  <div class="grid-item-content col-pink"></div>
-                                                </div>
-                                                
-                                                
-                                                  <div class="grid-item col-xs-12 col-md-8">
-                                                  <div class="grid-item-content col-pink"></div>
-                                                </div>
-                                                <div class="grid-item col-xs-12 col-md-4">
-                                                  <div class="grid-item-content col-pink"></div>
-                                                </div>
-                                                
-                                              </div> <!-- end of .grid -->
+            </nav>    
+                <!-- Page Content -->
+                <div id="pageContent" class="gray-bg dashbard-1">
+                    <div class="primary-content border-bottom white-bg dashboard-header">
+                        <div clas="container">
+                        <div class="row">
+                            <div class="col-md-20">
+                            <!-- masonary layout -->
+                            <div class="grid">
+                                <!-- grid sizer -->
+                                <div class="grid-sizer col-xs-12 col-sm-6 col-md-4">
+
+                                </div>
+                                <!-- end of grid sizer -->
+                                <div class="grid-item col-xs-12 col-md-8 ">
+                                    <!-- add inner element for column content -->
+                                    <div class="grid-item-content-height1 ">
                                         
-                                    </div><!-- end of row -->
+                                        
+                            	<div class="sg-tabs-container">
+                            		<div class="gs-tabs-navigation">
+                            			<span class="sg-tab-menu-item active-tab-item" data-item="1">Projects</span>
+                            			<span class="sg-tab-menu-item" data-item="2">Partners</span>
+    
+                            		</div>
+                            		<div class="sg-tabs-body">
+                            			<div class="sg-tab-content active-tab-item" data-item="1">
+                            				<table class="table projects">
+                                            <thead>
+                                                <tr>
+                                                    <th> NAME</th>
+                                                    <th> STAGE</th>
+                                                    <th>NEXT MILESTONE</th>
+                                                    <th> TASKS</th>
+                                                    <th>DOCS</th>
+                                                    <th> </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>GTFP AB Burkina | 43328</td>
+                                                    <td>Investment Review</td>
+                                                    <td>Board Approval </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>
+                                                    <td>:::</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>AB Bank Rwanda | 28756</td>
+                                                    <td>Business Development</td>
+                                                    <td>PDS Concept </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>
+                                                    <td>:::</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>AEFB Tacks Farm | 46786</td>
+                                                    <td>Investment Review</td>
+                                                    <td>Board Approval </td>
+                                                    <td> <p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td> 
+                                                    <td>:::</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>GMAC WHLPRST Farm | 90564</td>
+                                                    <td>Business Development</td>
+                                                    <td>PDS Concept </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td> 
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>   
+                                                    <td>:::</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PRST Farm | 56178</td>
+                                                    <td>Commitment</td>
+                                                    <td>1st Disbursement </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>                                                     
+                                                    <td>:::</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                            			</div>
+                            			<div class="sg-tab-content" data-item="2">
+                            				<table class="table projects">
+                                            <thead>
+                                                <tr>
+                                                    <th> NAME</th>
+                                                    <th> RNAME</th>
+                                                    <th>PART.TIER</th>
+                                                    <th> TASKS</th>
+                                                    <th>DOCS</th>
+                                                    <th> </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>New Hope Singapore | 43328</td>
+                                                    <td>Investment Review</td>
+                                                    <td>Board Approval </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>                                                    
+                                                    <td>:::</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BioTech FDTH | 28756</td>
+                                                    <td>Business Development</td>
+                                                    <td>PDS Concept </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>                  
+                                                    <td>:::</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>AEFB Farm | 46786</td>
+                                                    <td>Investment Review</td>
+                                                    <td>Board Approval </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>          
+                                                    <td>:::</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Timor Telecom | 90564</td>
+                                                    <td>Business Development</td>
+                                                    <td>PDS Concept </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>            
+                                                    <td>:::</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2C2PDD|56178</td>
+                                                    <td>Commitment</td>
+                                                    <td>1st Disbursement </td>
+                                                    <td><p>5</p>
+                                                        <img id="u274_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u274.png?token=c5b35eeab4a031ac549da03854a02617">
+                                                    </td>
+                                                    <td>
+                                                        <img id="u339_img" class="img " src="https://d26uhratvi024l.cloudfront.net/gsc/SR1VMB/85/53/8b/85538be5793e49949a04a8d44ff8d8ab/images/home_-_io-is/u339.png?token=49e4da75538ac6a768cf8041128b7532">
+                                                    </td>      
+                                                    <td>:::</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                            			</div>
+                            			
+                            		</div>
+                            		
+                            		<div class="card-footer">
+                            	        	<div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">CREATE PARTNEW</a>
+                                                </p>
+                                            </div>
+                                            <div class="pull-right">
+                                                <p>VEIW ALL</p>
+                                            </div>
+                            		</div>
+                            		
+                            	</div>
+                                        
+                                    </div>
+                                </div>
+                                
+                               
+                                <div class="grid-item col-xs-12 col-md-4 ">
+                                    <div class="grid-item-content grid-item-content-height2">
+                                      <div class="card-title">Where You Left Off</div>
+                                      <div class="card-content">
+                                        <div >
+                                                <div class="pull-left">
+                                                    <p class="nTitle">PDS Investment Review</p>
+                                                </div>
+                                                <div class="pull-right nDate">
+                                                    <p>Jun/20 12:00</p>
+                                                </div>
+                                        </div><br><br>
+                                         <div class="nSubtitle">
+                                                <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <div>
+                                                <div class="pull-left">
+                                                    <p class="nTitle">Partner Integrity Review</p>
+                                                </div>
+                                                <div class="pull-right nDate">
+                                                    <p>Jun/19 16:00</p>
+                                                </div>
+                                            </div> <br><br>   
+                                            <div class="nSubtitle">
+                                                <p><span class="nLabel">Partner:</span>21 Condoria | 28756</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <div>
+                                                <div class="pull-left">
+                                                    <p class="nTitle">Annual Monitoring Report,PDF</p>
+                                                </div>
+                                                <div class="pull-right nDate">
+                                                    <p>Jun/19 10:35</p>
+                                                </div>
+                                            </div><br><br>
+                                            <div class="nSubtitle">
+                                                <p><span class="nLabel">Project:</span>GMAC WHL | 28756</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <div>
+                                                <div class="pull-left">
+                                                    <p class="nTitle">Annual Monitoring Report,PDF</p>
+                                                </div>
+                                                <div class="pull-right nDate">
+                                                    <p>Jun/19 9:00</p>
+                                                </div>
+                                            </div><br><br>
+                                            <div class="nSubtitle">
+                                                <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="grid-item col-xs-12 col-md-8 ">
+                                    <div class="grid-item-content  grid-item-content-height2">
+                                        <div class="graph-title"> BI Metrics </div>
+                                        <div class="sg-tabs-container">
+                                        <div class="gs-tabs-navigation">
+                            			<span class="sg-tab-menu-item active-tab-item" data-item="1">Portfolio Distribution</span>
+                            			<span class="sg-tab-menu-item" data-item="2">Program Distribution</span>
+                                        </div>
+                            		     </div>
+                                        <!-- Start of SVG for Preview Graphs -->
+                                        <svg width="139px" height="139px" viewBox="0 0 139 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+                                            <desc>Created with Sketch.</desc>
+                                            <defs>
+                                                <path d="M15.2493983,111.023967 C28.0951862,126.913188 47.4004783,136.338028 68.2345343,136.338028 C105.847055,136.338028 136.338028,105.847055 136.338028,68.2345343 C136.338028,43.7886656 123.343151,21.5917875 102.644417,9.45228608 C92.291782,3.38061826 80.4904612,0.13104029 68.2345343,0.13104029 L68.2345343,17.1310403 C77.4462676,17.1310403 86.2821196,19.5640553 94.0441484,24.1163705 C109.591511,33.2346692 119.338028,49.882941 119.338028,68.2345343 C119.338028,96.4582147 96.4582147,119.338028 68.2345343,119.338028 C52.5895566,119.338028 38.121223,112.27459 28.4694409,100.336101 L15.2493983,111.023967 Z" id="path-1"></path>
+                                                <path d="M31.0688354,11.1579371 C11.9247499,23.6460038 0.13104029,44.9412725 0.13104029,68.2345343 C0.13104029,84.0188045 5.52787799,98.9992166 15.2493983,111.023967 L28.4694409,100.336101 C21.1719815,91.3097221 17.1310403,80.0929747 17.1310403,68.2345343 C17.1310403,50.7465141 25.9745848,34.7782003 40.3568454,25.3963665 L31.0688354,11.1579371 Z" id="path-2"></path>
+                                            </defs>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+                                                <g id="Home" transform="translate(-159.000000, -733.000000)" fill-rule="nonzero">
+                                                    <g id="Group-5" transform="translate(160.000000, 734.000000)">
+                                                        <path d="M68.2345343,0.13104029 C54.8601669,0.13104029 42.03861,4.00213558 31.0688354,11.1579371 L40.3568454,25.3963665 C48.5846305,20.029219 58.1837648,17.1310403 68.2345343,17.1310403 L68.2345343,0.13104029 Z" id="Oval-3" fill="#B7B7B7"></path>
+                                                        <g id="Oval-3">
+                                                            <use fill="#A4A4A4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                                            <path stroke="#FFFFFF" stroke-width="1" d="M14.5462245,110.949491 L28.5439167,99.632927 L28.8582657,100.021752 C38.4879697,111.932932 52.8551967,118.838028 68.2345343,118.838028 C96.1820724,118.838028 118.838028,96.1820724 118.838028,68.2345343 C118.838028,50.1878889 109.296637,33.6413775 93.7911993,24.5476671 C86.0565888,20.0114323 77.3002959,17.6310403 68.2345343,17.6310403 L67.7345343,17.6310403 L67.7345343,-0.36895971 L68.2345343,-0.36895971 C80.50728,-0.36895971 92.4056458,2.86775014 102.897367,9.02098948 C123.897707,21.3373793 136.838028,43.7817961 136.838028,68.2345343 C136.838028,106.123198 106.123198,136.838028 68.2345343,136.838028 C47.4027581,136.838028 27.8986733,127.465411 14.8605735,111.338316 L14.5462245,110.949491 Z"></path>
+                                                        </g>
+                                                        <g id="Oval-3">
+                                                            <use fill="#4A4A4A" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                                            <path stroke="#FFFFFF" stroke-width="1" d="M31.214436,10.465983 L41.0487995,25.5419671 L40.6300221,25.8151438 C26.2837114,35.1735269 17.6310403,51.0401769 17.6310403,68.2345343 C17.6310403,79.8957466 21.5803209,91.0195111 28.8582657,100.021752 L29.1726147,100.410577 L15.1749225,111.72714 L14.8605735,111.338316 C4.99860178,99.1398383 -0.36895971,84.0250329 -0.36895971,68.2345343 C-0.36895971,44.9393099 11.3687539,23.4117151 30.7956587,10.7391598 L31.214436,10.465983 Z"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+
+                                        <svg width="138px" height="138px" viewBox="0 0 138 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+                                            <desc>Created with Sketch.</desc>
+                                            <defs>
+                                                <path d="M123.080952,27.8552266 C117.588935,20.4064366 110.62884,14.1350319 102.644417,9.45228608 C92.291782,3.38061826 80.4904612,0.13104029 68.2345343,0.13104029 L68.2345343,17.1310403 C77.4462676,17.1310403 86.2821196,19.5640553 94.0441484,24.1163705 C100.039646,27.6326411 105.271242,32.3465789 109.398016,37.9436986 L123.080952,27.8552266 Z" id="path-1"></path>
+                                                <path d="M93.2670993,131.587721 C114.275364,123.280787 129.946989,104.955892 134.776418,82.7938707 L118.166227,79.1742664 C114.547284,95.7814221 102.774181,109.54776 87.016026,115.778733 L93.2670993,131.587721 Z" id="path-2"></path>
+                                                <path d="M6.34743261,39.7734005 C2.27061997,48.6253868 0.13104029,58.2869528 0.13104029,68.2345343 C0.13104029,84.0188045 5.52787799,98.9992166 15.2493983,111.023967 L28.4694409,100.336101 C21.1719815,91.3097221 17.1310403,80.0929747 17.1310403,68.2345343 C17.1310403,60.7547139 18.7336545,53.5178891 21.7885243,46.8848482 L6.34743261,39.7734005 Z" id="path-3"></path>
+                                            </defs>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Home" transform="translate(-358.000000, -733.000000)" fill-rule="nonzero">
+                                                    <g id="Group-3" transform="translate(359.000000, 734.000000)">
+                                                        <path d="M68.2345343,0.13104029 L68.2345343,17.1310403 C58.1837648,17.1310403 48.5846305,20.029219 40.3568454,25.3963665 L31.0688354,11.1579371 C42.03861,4.00213558 54.8601669,0.13104029 68.2345343,0.13104029 Z M31.0688354,11.1579371 L40.3568454,25.3963665 C32.2808469,30.6645005 25.8205343,38.1301417 21.7885243,46.8848482 L6.34743261,39.7734005 C11.7213646,28.1049779 20.3172992,18.1713774 31.0688354,11.1579371 Z" id="Combined-Shape" fill="#808080"></path>
+                                                        <path d="M134.776418,82.7938707 C135.81152,78.0438369 136.338028,73.1704279 136.338028,68.2345343 C136.338028,53.5066876 131.64146,39.4657945 123.080952,27.8552266 L109.398016,37.9436986 C115.821737,46.6561543 119.338028,57.1684834 119.338028,68.2345343 C119.338028,71.9514784 118.942616,75.6114527 118.166227,79.1742664 L134.776418,82.7938707 Z" id="Oval-3" fill="#808080"></path>
+                                                        <path d="M15.2493983,111.023967 C28.0951862,126.913188 47.4004783,136.338028 68.2345343,136.338028 C76.9044146,136.338028 85.362942,134.713124 93.2670993,131.587721 L87.016026,115.778733 C81.0939438,118.120399 74.7555089,119.338028 68.2345343,119.338028 C52.5895566,119.338028 38.121223,112.27459 28.4694409,100.336101 L15.2493983,111.023967 Z" id="Oval-3" fill="#C8C8C8"></path>
+                                                        <g id="Oval-3">
+                                                            <use fill="#5C5C5C" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                                            <path stroke="#FFFFFF" stroke-width="1" d="M123.780111,27.9609461 L109.292296,38.6428577 L108.995577,38.2404184 C104.906941,32.6950256 99.7252762,28.0279156 93.7911993,24.5476671 C86.0565888,20.0114323 77.3002959,17.6310403 68.2345343,17.6310403 L67.7345343,17.6310403 L67.7345343,-0.36895971 L68.2345343,-0.36895971 C80.50728,-0.36895971 92.4056458,2.86775014 102.897367,9.02098948 C110.935631,13.735313 117.948011,20.0509028 123.483391,27.5585068 L123.780111,27.9609461 Z"></path>
+                                                        </g>
+                                                        <g id="Oval-3">
+                                                            <use fill="#DCDCDC" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                                            <path stroke="#FFFFFF" stroke-width="1" d="M92.9859842,132.236546 L86.3672006,115.497618 L86.8321709,115.313763 C102.467402,109.131395 114.101524,95.4786696 117.677692,79.0678075 L117.784151,78.5792724 L135.371412,82.4117946 L135.264953,82.9003296 C130.410303,105.178088 114.659177,123.666692 93.4509544,132.052691 L92.9859842,132.236546 Z"></path>
+                                                        </g>
+                                                        <g id="Oval-3">
+                                                            <use fill="#5C5C5C" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                                            <path stroke="#FFFFFF" stroke-width="1" d="M6.10244309,39.1100905 L22.4518343,46.6398586 L22.242674,47.0940084 C19.2010237,53.6983462 17.6310403,60.8676181 17.6310403,68.2345343 C17.6310403,79.8957466 21.5803209,91.0195111 28.8582657,100.021752 L29.1726147,100.410577 L15.1749225,111.72714 L14.8605735,111.338316 C4.99860178,99.1398383 -0.36895971,84.0250329 -0.36895971,68.2345343 C-0.36895971,58.2646948 1.76536931,48.527182 5.89328286,39.5642403 L6.10244309,39.1100905 Z"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+
+                                        <svg width="283px" height="199px" viewBox="0 0 283 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+                                            <desc>Created with Sketch.</desc>
+                                            <defs></defs>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Home" transform="translate(-612.000000, -734.000000)">
+                                                    <g id="Group-7" transform="translate(612.000000, 734.000000)">
+                                                        <rect id="Rectangle-3" fill="#4A4A4A" opacity="0.900000036" x="36" y="0" width="121.54804" height="28.097561"></rect>
+                                                        <rect id="Rectangle-3" fill="#4A4A4A" opacity="0.400000006" x="36" y="32.7804878" width="83.7012656" height="28.097561"></rect>
+                                                        <rect id="Rectangle-3" fill="#4A4A4A" opacity="0.699999988" x="36" y="65.5609756" width="189.578125" height="28.097561"></rect>
+                                                        <rect id="Rectangle-3" fill="#4A4A4A" opacity="0.200000003" x="36" y="98.3414634" width="53.1851468" height="28.097561"></rect>
+                                                        <rect id="Rectangle-3" fill="#4A4A4A" opacity="0.300000012" x="36" y="131.121951" width="106.370294" height="28.097561"></rect>
+                                                        <rect id="Rectangle-3" fill="#4A4A4A" opacity="0.5" x="36" y="163.902439" width="61.6849794" height="28.097561"></rect>
+                                                        <text id="CEA" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#21272E">
+                                                            <tspan x="0" y="19.0487805">CE</tspan>
+                                                            <tspan x="0" y="34.0487805">A</tspan>
+                                                        </text>
+                                                        <text id="CSA" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#21272E">
+                                                            <tspan x="0" y="51.8292683">CS</tspan>
+                                                            <tspan x="0" y="66.8292683">A</tspan>
+                                                        </text>
+                                                        <text id="CAF" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#21272E">
+                                                            <tspan x="0" y="85.5463415">CA</tspan>
+                                                            <tspan x="0" y="100.546341">F</tspan>
+                                                        </text>
+                                                        <text id="CLA" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#21272E">
+                                                            <tspan x="0" y="117.390244">CL</tspan>
+                                                            <tspan x="0" y="132.390244">A</tspan>
+                                                        </text>
+                                                        <text id="CEU" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#21272E">
+                                                            <tspan x="0" y="150.170732">CE</tspan>
+                                                            <tspan x="0" y="165.170732">U</tspan>
+                                                        </text>
+                                                        <text id="CME" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#21272E">
+                                                            <tspan x="0" y="183.887805">CM</tspan>
+                                                            <tspan x="0" y="198.887805">E</tspan>
+                                                        </text>
+                                                        <text id="$126.25M" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#4A4A4A">
+                                                            <tspan x="108" y="181.95122">$126.25M</tspan>
+                                                        </text>
+                                                        <text id="$218.29M" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#4A4A4A">
+                                                            <tspan x="153" y="149.170732">$218.29M</tspan>
+                                                        </text>
+                                                        <text id="$108.98M" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#4A4A4A">
+                                                            <tspan x="98" y="116.390244">$108.98M</tspan>
+                                                        </text>
+                                                        <text id="$388.96M" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#4A4A4A">
+                                                            <tspan x="235" y="83.6097561">$388.96</tspan>
+                                                            <tspan x="235" y="98.6097561">M</tspan>
+                                                        </text>
+                                                        <text id="$172.55M" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#4A4A4A">
+                                                            <tspan x="131" y="50.8292683">$172.55M</tspan>
+                                                        </text>
+                                                        <text id="$249.34M" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" fill="#4A4A4A">
+                                                            <tspan x="170" y="18.0487805">$249.34</tspan>
+                                                            <tspan x="170" y="33.0487805">M</tspan>
+                                                        </text>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <!-- End of SVG for Preview Graphs -->
+                                    <div class="card-footer">
+                                            <div class="pull-right">
+                                                <p>VEIW ALL</p>
+                                            </div>
+                            		    </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-12 col-md-4 ">
+                                  <div class="grid-item-content grid-item-content-height2 ">
+                                      <div class="card-title"> Client Interaction</div>
+                                      <div class="card-items">
+                                            <div class="card-content">
+                                             <div>    
+                                                <div class="pull-left">
+                                                    <p class="nTitle">Subject of the Meeting  <br></p>
+                                                </div>
+                                                <div class="pull-right nDate">
+                                                    <p>Jul/01 16:22</p>
+                                                </div>
+                                              </div><br><br>
+                                            <div class="notification-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                            </div>
+                                            <div class="notification-content">
+                                                <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                            </div>
+                                            </div>
+                                             <div class="card-content">
+                                                <div class="pull-left">
+                                                    <p class="nTitle">Subject of the Call    <br> </p>
+                                                </div>
+                                                <div class="pull-right nDate">
+                                                    <p>Jul/01 16:22</p>
+                                                </div><br><br>
+                                            
+                                            <div class="notification-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                            </div>
+                                            <div class="notification-content">
+                                                <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                            </div>
+                                            </div>
+                                             <div class="card-content">
+                                                <div class="pull-left">
+                                                    <p class="nTitle">Subject of the Call    <br></p>
+                                                </div>
+                                                <div class="pull-right nDate">
+                                                    <p>Jul/01 16:22</p>
+                                                </div><br><br>
+                                            <div class="notification-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+                                            </div>
+                                            <div class="notification-content">
+                                                <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                            </div>
+                                            </div>
+                                      </div>        
+                                      	<div class="card-footer">
+                            	        	<div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">CREATE PARTNEW</a>
+                                                </p>
+                                            </div>
+                                            <div class="pull-right">
+                                                <p>VEIW ALL</p>
+                                            </div>
+                            		    </div>
+                                  </div>
+                                </div>
                             </div>
-                            <div class="secondary-content">
-                                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-                                <div class="row">
-                                          <div class="col col-md-8">
-                                              <div class="ibox float-e-margins">
-                                                  <div class="ibox-title">
-                                                    <h5>Lorem Ipsum</h5>
-                                                    
-                                                   
-                                                  </div>
-                                                  <div class="ibox-content">
-                                                    <div>
-                                                      <div class="pull-right text-right"> </div>
-                                                      <h4>Lorem ipsum dolor  </h4>
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.<br/>
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
-                                                    </div>
-                                                  </div>
-                                                </div></div>
-                                          <div class="col-md-6 col-md-4">
-                                              <div class="ibox float-e-margins">
-                                                  <div class="ibox-title">
-                                                    <h5>Lorem Ipsum</h5>
-                                                    
-                                                  
-                                                  </div>
-                                                  <div class="ibox-content">
-                                                    <div>
-                                                      <div class="pull-right text-right"> </div>
-                                                      <h4>Lorem ipsum dolor  </h4>
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                          </div>
+                            <!-- end of .grid -->
+                            </div>
+                        </div>
+                        <!-- end of row -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end of #pageContent -->
+                <!-- Sidebars -->
+                <!-- Notifications Sidebar -->
+                <div id="notifications-sidebar" class="fadeInRight animated rightNav ">
+                    <div class="sidebarHeaderWrap">
+                        <div class="sidebar-heading">
+                            <div class="sidebar-top">
+                                <div class="sidebar-title">Notifications (5)</div>
+
+                                <div class="filters">
+                                    Filters
+                                    <div class="filter-count pull-right">
+                                        3
+                                    </div>    
+                                </div>
+
+                            </div>
+                            <div class="sidebar-bottom"></div>
+                        </div>
+                    </div>
+
+                    <nav><div class="sidebarWrap">
+                        <div class="sidebar-body">
+                            <div class="sidebar-notification notification-urgent">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PRoduct</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>TODAY 9:25</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>Disbursement Booked</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>Agented Parallel loan disbursed on 08-01-2017 for USD $45,000 under the project “XYZ Project (46408)” for the Partner ETI (50427).</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification notification-urgent">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification ">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">EPMS-VM</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>- Option Expiring</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>Warrent (23456) for Trivon AG Waiver Trivax AG (556778) having Option excercises start date as of 03-Aug-2017 expiring on 01-Jul-2017.</p>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-notification">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div></nav>
+                </div>
+                <!-- end of #notifications-sidebar -->
+                <!-- Tasks Sidebar -->
+                <div id="tasks-sidebar" class="fadeInRight animated rightNav ">
+                    <div class="sidebarHeaderWrap">
+                        <div class="sidebar-heading">
+                            <div class="sidebar-top">
+                                <div>
+                                <div class="sidebar-title">Tasks</div>
+                                <div class="dropdown">
+                                    <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Primary Role <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Primary Role</a></li>
+                                        <li><a href="#">Proxy Role</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                                <div class="filters">
+                                    Filters
+                                     <div class="filter-count pull-right">
+                                        3
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                            <div class="sidebar-bottom">
+                                <!-- Nav tabs -->
+                                <div class="ifc-tabs">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#my-tasks" aria-controls="home" role="tab" data-toggle="tab">
+                                                <span class="data-text">Pending with me </span><span class="data-count">(6)</span>
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#tasks-other" aria-controls="profile" role="tab" data-toggle="tab">
+                                                <span class="data-text">Pending with others </span><span class="data-count">(3)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarWrap">
+                        <div class="sidebar-body">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="my-tasks">
+                                    <div class="task-header">Documents Workflows</div>
+                                    <div class="sidebar-notification notification-overdue">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PDS Change Approval</a>
+                                                </p>
+                                            </div>
+                                            <div class="pull-right">
+                                           <p class="nDate">2 days Overdue</p>
+                                            </div>
                                         </div>
-                                        
-                                <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-                                <div class="row">
-                                          <div class="col-md-6 col-md-4">
-                                              <div class="ibox float-e-margins">
-                                                  <div class="ibox-title">
-                                                    <h5>Lorem Ipsum</h5>
-                                                    
-                                                    
-                                                  </div>
-                                                  <div class="ibox-content">
-                                                    <div>
-                                                      <div class="pull-right text-right"> </div>
-                                                      <h4>Lorem ipsum dolor  </h4>
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                          </div>
-                                          <div class="col-md-6 col-md-4">
-                                              <div class="ibox float-e-margins">
-                                                  <div class="ibox-title">
-                                                    <h5>Lorem Ipsum</h5>
-                                                    
-                                                    
-                                                  </div>
-                                                  <div class="ibox-content">
-                                                    <div>
-                                                      <div class="pull-right text-right"> </div>
-                                                      <h4>Lorem ipsum dolor  </h4>
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
-                                                    </div>
-                                                  </div>
-                                                </div></div>
-                                          <div class="col-md-6 col-md-4">
-                                              <div class="ibox float-e-margins">
-                                                  <div class="ibox-title">
-                                                    <h5>Lorem Ipsum</h5>
-                                                    
-                                                    
-                                                  </div>
-                                                  <div class="ibox-content">
-                                                    <div>
-                                                      <div class="pull-right text-right"> </div>
-                                                      <h4>Lorem ipsum dolor  </h4>
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                          </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Workflow Name:</span>Manager Approve</p>
+                                            <p><span class="nLabel">Stage:</span> Supervision</p>
+                                            <p><span class="nLabel">Project:</span> GTFP AB Burkina | 43328</p>
+
                                         </div>
-                                        
-                                <!-- Columns are always 50% wide, on mobile and desktop -->
-                                <div class="row">
-                                          <div class="col-md-6">
-                                              <div class="ibox float-e-margins">
-                                                  <div class="ibox-title">
-                                                    <h5>Lorem Ipsum</h5>
-                                                    
-                                                    
-                                                  </div>
-                                                  <div class="ibox-content">
-                                                    <div>
-                                                      <div class="pull-right text-right"> </div>
-                                                      <h4>Lorem ipsum dolor  </h4>
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
-                                                    </div>
-                                                  </div>
-                                                </div></div>
-                                          <div class="col-md-6">
-                                              <div class="ibox float-e-margins">
-                                                  <div class="ibox-title">
-                                                    <h5>Lorem Ipsum</h5>
-                                                    
-                                                    
-                                                  </div>
-                                                  <div class="ibox-content">
-                                                    <div>
-                                                      <div class="pull-right text-right"> </div>
-                                                      <h4>Lorem ipsum dolor  </h4>
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat auctor est. Vestibulum luctus at sapien ac feugiat. Curabitur hendrerit nisi ut tincidunt auctor. Aliquam sodales dictum ligula sit amet dictum. Vivamus pretium est ut ipsum tempus porttitor. Donec arcu urna, ultricies nec nisi in, sagittis placerat orci. Donec sed dignissim ex. Nam sollicitudin sem in ultrices scelerisque. Duis nec accumsan dolor. Praesent ut velit eget ipsum vestibulum lacinia. Morbi ut mi mi. Curabitur congue turpis nec urna egestas tempor.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                          </div>
+                                    </div>
+                                    <div class="sidebar-notification notification-urgent">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PDS Concept Approval</a>
+                                                </p>
+                                            </div>
+                                             <div class="pull-right">
+                                                 <p class="nDate">Due in 5 days</p>
+                                            </div>
+                                          
                                         </div>
-                            </div>   
-                            <!-- help footer -->
-                            <div id="help-footer" class="help-footer">
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Workflow Name:</span>Manager Approve</p>
+                                            <p><span class="nLabel">Stage:</span>Business Development</p>
+                                            <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="task-header">Supervision Tasks</div>
+                                    <div class="sidebar-notification notification-urgent">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">Complete PD Rating</a>
+                                                </p>
+                                            </div>
+                                             <div class="pull-right">
+                                                 <p class="nDate">Due in 5 days</p>
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-notification ">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PD Rating Approval</a>
+                                                </p>
+                                            </div>
+                                             <div class="pull-right">
+                                             <p class="nDate">Jul/19 10:00</p>                           
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-notification">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">Complete LGD Rating</a>
+                                                </p>
+                                            </div>
+                                            <div class="pull-right">
+                                             <p class="nDate">Jul/20 10:00</p>                           
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                            <p><span class="nLabel">Project:</span>Africa IC | 43242</p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-notification">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">LGD Rating Approval</a>
+                                                </p>
+                                            </div>
+                                              <div class="pull-right">
+                                                <p class="nDate">Jul/20 10:00</p>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Workflow Name:</span>PM Approve</p>
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                            <p><span class="nLabel">Project:</span>Africa IC | 43242</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="tasks-other">
+                                    <div class="sidebar-notification ">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PD Rating Approval</a>
+                                                </p>
+                                            </div>
+                                              <div class="pull-right">
+                                                <p class="nDate">Jul/20 15:00</p>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Workflow Name:</span>PM Approve</p>
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                            <p><span class="nLabel">Pending with:</span>John Hayes</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-notification ">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PDS Concept Approval</a>
+                                                </p>
+                                            </div>
+                                            <div class="pull-right">
+                                            <p class="nDate">Jul/23 12:00</p>
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Workflow Name:</span>PM Approve</p>
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                            <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
+                                            <p><span class="nLabel">Pending with:</span>John Hayes</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of #tasks-sidebar -->
+                 <!-- help footer -->
+                <div id="help-footer" class="help-footer">
                                 <div class="container">
                                     <div class="row">
-                                         <h2 class="pull-left">Help & Support</h2>
+                                         <!--<h2 class="pull-left">Help & Support</h2>-->
                                         <button type="button" class="btn btn-info pull-right closeFooter">[X]</button>
+                                        <div class="col-lg-12 ">
+                                            <div class="col-md-4">
+                                                <ul class="nav help-contact">
+                                                    <li><a href="">Support</a></li>
+                                                    <li><a href="">1-876-223-0987</a></li>
+                                                    <li><a href="">Email Support</a></li>
+                                                    <li><a href="">Live chat</a></li>
+                                                    <li><a href="">FAQs</a></li>
+                                                </ul>
+                                                 </div>
+                                            <div class="col-md-4">
+                                                 <ul class="nav ">
+                                                    <li><a href="">Suggested Resources</a><br> Supervision:project Handover</li>
+                                                    <li><a href="">Exchange Requirements for facility handover(PDF)</a></li>
+                                                    <li><a href="">How to draft portfolio handover(PDF)</a></li>
+                                                    <li><a href="">Environmental and social Review procedures(PDF)</a></li>
+                                                    <li><a href="">Life cycle page overview (guided tour)</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                 <ul class="nav training">
+                                                    <li><a href="" class="title">Training Resources</a></li>
+                                                    <li><a href="">iportal eLearning</a></li>
+                                                    <li><a href="">Training Classes</a></li>
+                                                    <li><a href="">Lipsum dolor chat</a></li>
+                                                    <li><a href="">Library liaste</a></li>
+                                                    <li><a href="">Walk Through</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                
                             </div>
-                    </div>
-                    <!-- end of #pageContent -->
-                    <!-- Sidebars -->
-                    <!-- Notifications Sidebar -->
-                    <div id="notifications-sidebar" class="fadeInRight animated rightNav ">
-                        <div class="sidebarHeaderWrap">
-                            <div class="sidebar-heading">
-                                <div class = "sidebar-top">
-                                    <div class = "sidebar-title">Notifications (5)</div>
-                                    
-                                    <div>
-                                            <button type="button" class="btn btn-default btn-sidebar" data-toggle="modal" data-target="#myModal">
-                                             <i class="fa fa-filter" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                    
-                                </div>
-                                <div class = "sidebar-bottom"></div>
-                            </div>
-                        </div> 
-                            
-                            
-                            
-                            
-                            <div class="sidebarWrap"> 
-                                <div class="sidebar-body">
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">PRoduct</p>
-                                   </div>
-                                    <div class="pull-right nDate">
-                                       <p>TODAY 9:25</p>
-                                   </div>
-                               </div>
-                                <div class="nSubtitle">
-                                       <p>Disbursement Booked</p>
-                                </div>
-                               <div class="notification-content">
-                                   <p>Agented Parallel loan disbursed on 08-01-2017 for USD $45,000 under the project “XYZ Project (46408)” for the Partner ETI (50427).</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">PDS CONCEPT</p>
-                                   </div>
-                                    <div class="pull-right nDate">
-                                       <p>Jul/01 16:22</p>
-                                   </div>
-                               </div>
-                                <div class="nSubtitle">
-                                       <p>PDS Waiver Expiring (Post-handover)</p>
-                                </div>
-                               <div class="notification-content">
-                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification notification-urgent">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">EPMS-VM</p>
-                                   </div>
-                                    <div class="pull-right nDate">
-                                       <p>Jul/01 16:22</p>
-                                   </div>
-                               </div>
-                                <div class="nSubtitle">
-                                       <p>- Option Expiring</p>
-                                </div>
-                               <div class="notification-content">
-                                   <p>Warrent (23456) for Trivon AG Waiver Trivax AG (556778) having Option excercises start date as of  03-Aug-2017 expiring on 01-Jul-2017.</p>
-                               </div>
-                           </div>
-                           
-                           <div class="sidebar-notification">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">PDS CONCEPT</p>
-                                   </div>
-                                    <div class="pull-right nDate">
-                                       <p>Jul/01 16:22</p>
-                                   </div>
-                               </div>
-                                <div class="nSubtitle">
-                                       <p>PDS Waiver Expiring (Post-handover)</p>
-                                </div>
-                               <div class="notification-content">
-                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">PDS CONCEPT</p>
-                                   </div>
-                                    <div class="pull-right nDate">
-                                       <p>Jul/01 16:22</p>
-                                   </div>
-                               </div>
-                                <div class="nSubtitle">
-                                       <p>PDS Waiver Expiring (Post-handover)</p>
-                                </div>
-                               <div class="notification-content">
-                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">PDS CONCEPT</p>
-                                   </div>
-                                    <div class="pull-right nDate">
-                                       <p>Jul/01 16:22</p>
-                                   </div>
-                               </div>
-                                <div class="nSubtitle">
-                                       <p>PDS Waiver Expiring (Post-handover)</p>
-                                </div>
-                               <div class="notification-content">
-                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
-                               </div>
-                           </div>
-                           <div class="sidebar-notification">
-                               <div class="notification-headline clearfix">
-                                   <div class="pull-left">
-                                       <p class="nTitle">PDS CONCEPT</p>
-                                   </div>
-                                    <div class="pull-right nDate">
-                                       <p>Jul/01 16:22</p>
-                                   </div>
-                               </div>
-                                <div class="nSubtitle">
-                                       <p>PDS Waiver Expiring (Post-handover)</p>
-                                </div>
-                               <div class="notification-content">
-                                   <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
-                               </div>
-                           </div>
-                        </div>
-                            </div>
-                        </div>
-                    <!-- end of #notifications-sidebar -->
-                    <!-- Tasks Sidebar -->
-                    <div id="tasks-sidebar" class="fadeInRight animated rightNav ">
-                        <div class="sidebarHeaderWrap">
-                            <div class="sidebar-heading">
-                                <div class = "sidebar-top">
-                                    <div class="sidebar-title">Tasks</div>
-                                    
-                                        <div class="dropdown">
-                                      <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Primary Role <span class="caret"></span>
-                                      </button>
-                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Primary Role</a></li>
-                                        <li><a href="#">Proxy Role</a></li>
-                                      </ul>
-                                </div>
-                                        <div>
-                                            <button type="button" class="btn btn-default btn-sidebar" data-toggle="modal" data-target="#myModal">
-                                             <i class="fa fa-filter" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                    
-                                </div> 
-                                <div class = "sidebar-bottom">    
-                                    <!-- Nav tabs -->
-                                    <div class="ifc-tabs">
-                                        <ul class="nav nav-tabs" role="tablist">
-                                            <li role="presentation" class="active">
-                                                <a href="#my-tasks" aria-controls="home" role="tab" data-toggle="tab">Pending with me (6)</a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a href="#tasks-other" aria-controls="profile" role="tab" data-toggle="tab">Pending with others (2)</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebarWrap">
-                            <div class="sidebar-body">
-                               <div class="tab-content">
-                                  <div role="tabpanel" class="tab-pane fade in active" id="my-tasks">
-                                  
-                                   <div class="sidebar-notification notification-urgent">
-                                      <div class="notification-headline clearfix">
-                                           <div class="pull-left">
-                                                <p class="nTitle">
-                                                   <a href="#" class="lLink" id="" data-lightbox="">PDS Change Approval</a>
-                                                </p>
-                                           </div>
-                                           <div class="pull-right">
-                                               <p class="nDate warning">2 Days Overdue</p>
-                                           </div>
-                                       </div>
-                                       <div class="notification-content">
-                                           <p><span class="nLabel">Workflow Name:</span>Manager Approve</p> 
-                                           <p><span class="nLabel">Stage:</span> Supervision</p>
-                                           <p><span class="nLabel">Project:</span> GTFP AB Burkina | 43328</p>
-                                   
-                                       </div>
-                                  </div>
-                                   <div class="sidebar-notification notification-urgent">
-                                      <div class="notification-headline clearfix">
-                                           <div class="pull-left">
-                                                <p class="nTitle">
-                                                   <a href="#" class="lLink" id="" data-lightbox="">PDS Concept Approval</a>
-                                                </p>
-                                           </div>
-                                           <div class="pull-right">
-                                               <p class="nDate">Due in 5 Days</p>
-                                           </div>
-                                       </div>
-                                       <div class="notification-content">
-                                           <p><span class="nLabel">Workflow Name:</span>Manager Approve</p> 
-                                           <p><span class="nLabel">Stage:</span>Business Development</p>
-                                           <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
-                                   
-                                       </div>
-                                  </div>
-                                  
-                                   <div class="sidebar-notification">
-                                      <div class="notification-headline clearfix">
-                                           <div class="pull-left">
-                                                <p class="nTitle">
-                                                   <a href="#" class="lLink" id="" data-lightbox="">COMPLETE PD RATING</a>
-                                                </p>
-                                           </div>
-                                           <div class="pull-right">
-                                               <p class="nDate">Jul/19 10:00</p>
-                                           </div>
-                                       </div>
-                                       <div class="notification-content">
-                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p> 
-                                       </div>
-                                  </div>
-                                   <div class="sidebar-notification">
-                                      <div class="notification-headline clearfix">
-                                           <div class="pull-left">
-                                                <p class="nTitle">
-                                                   <a href="#" class="lLink" id="" data-lightbox="">PD RATING APPROVAL</a>
-                                                </p>
-                                           </div>
-                                           <div class="pull-right">
-                                               <p class="nDate">Jul/22 10:00</p>
-                                           </div>
-                                       </div>
-                                       <div class="notification-content">
-                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p> 
-                                       </div>
-                                  </div>
-                                   <div class="sidebar-notification">
-                                      <div class="notification-headline clearfix">
-                                           <div class="pull-left">
-                                                <p class="nTitle">
-                                                   <a href="#" class="lLink" id="" data-lightbox="">COMPLETE LGD RATING</a>
-                                                </p>
-                                           </div>
-                                           <div class="pull-right">
-                                               <p class="nDate">Jul/23 10:00</p>
-                                           </div>
-                                       </div>
-                                       <div class="notification-content">
-                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
-                                           <p><span class="nLabel">Project:</span>Africa IC | 43242</p> 
-                                       </div>
-                                  </div>
-                                   <div class="sidebar-notification">
-                                      <div class="notification-headline clearfix">
-                                           <div class="pull-left">
-                                                <p class="nTitle">
-                                                   <a href="#" class="lLink" id="" data-lightbox="">LGD RATING APPROVAL</a>
-                                                </p>
-                                           </div>
-                                           <div class="pull-right">
-                                               <p class="nDate">Jul/24 10:00</p>
-                                           </div>
-                                       </div>
-                                       <div class="notification-content">
-                                           <p><span class="nLabel">Workflow Name:</span>PM Approve</p>
-                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
-                                           <p><span class="nLabel">Project:</span>Africa IC | 43242</p> 
-                                       </div>
-                                  </div>
-                           
-                              </div>
-                                  <div role="tabpanel" class="tab-pane fade in" id="tasks-other">
-                                   <div class="sidebar-notification notification-urgent">
-                                      <div class="notification-headline clearfix">
-                                           <div class="pull-left">
-                                                <p class="nTitle">
-                                                   <a href="#" class="lLink" id="" data-lightbox="">PD RATING APPROVAL</a>
-                                                </p>
-                                           </div>
-                                           <div class="pull-right">
-                                               <p class="nDate warning">3 Days Overdue</p>
-                                           </div>
-                                       </div>
-                                       <div class="notification-content">
-                                           <p><span class="nLabel">Workflow Name:</span>PM Approve</p> 
-                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
-                                           <p><span class="nLabel">Pending with:</span>John Hayes</p>
-                                   
-                                       </div>
-                                  </div>
-                                   <div class="sidebar-notification notification-urgent">
-                                      <div class="notification-headline clearfix">
-                                           <div class="pull-left">
-                                                <p class="nTitle">
-                                                   <a href="#" class="lLink" id="" data-lightbox="">PDS Concept Approval</a>
-                                                </p>
-                                           </div>
-                                           <div class="pull-right">
-                                               <p class="nDate">Due in 5 Days</p>
-                                           </div>
-                                       </div>
-                                       <div class="notification-content">
-                                           <p><span class="nLabel">Workflow Name:</span>PM Approve</p> 
-                                           <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
-                                           <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
-                                           <p><span class="nLabel">Pending with:</span>John Hayes</p>
-                                   
-                                       </div>
-                                  </div>
-                              </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of #tasks-sidebar -->
-            </div><!-- end of .pageWrap -->
-        </div><!-- end of .pageWrapper -->
-        
-    </div><!-- end of #wrapper -->
+            </div>
+            <!-- end of .pageWrap -->
+        </div>
+        <!-- end of .pageWrapper -->
+
+    </div>
+    <!-- end of #wrapper -->
 
     <!-- Main framework scripts //use CDN links -->
     <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- jQuery UI -->
     <!-- <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- Latest compiled and minified Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -688,6 +1007,7 @@
     <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
     <!-- custom jQuery script -->
     <script src="js/custom.js"></script>
-    
+
 </body>
+
 </html>

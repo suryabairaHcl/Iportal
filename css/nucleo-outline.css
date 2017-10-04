@@ -2337,6 +2337,9 @@ Created using IcoMoon - icomoon.io
 .nc-icon-outline.design_pen-23:before {
   content: "\e9a4";
 }
+.nc-icon-outline.nc-grid-45::before {
+    content: "\ea1c";
+}
 .nc-icon-outline.design_pen-tool:before {
   content: "\e9a5";
 }

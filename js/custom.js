@@ -3,6 +3,22 @@ $(document).ready(function () {
     //alert("jquery is on");
     /* global $ */
     
+    
+        /* tabs*/
+    
+			$(".gs-tabs-navigation > .sg-tab-menu-item").on("click",function(evt){
+				// remove any existing active elements
+				$(this).closest(".sg-tabs-container")
+					   .find(".active-tab-item")
+					   .removeClass("active-tab-item");
+				// add active class to clicked element
+				$(this).addClass("active-tab-item");
+				$(this).closest(".sg-tabs-container")
+					   .find(".sg-tabs-body .sg-tab-content[data-item='"+($(this).data("item"))+"']")
+					   .addClass("active-tab-item");
+			});
+  
+    /* tabs*/
     // MetisMenu
     var sideMenu = $('#side-menu');
     sideMenu.metisMenu();
@@ -13,17 +29,20 @@ $(document).ready(function () {
     // add glyph to active li
     $('.nav li.active i, .nav li.activeNav i').addClass('nc-icon-glyph');
     // hide span tags initially
+    $('.help-support span.nav-label').addClass('hideNav');
     $('.nav span').fadeTo(0);
     // hover menu
      $('#navbar-menu-side').on('mouseenter', function () {
+        $('.help-support span.nav-label').removeClass('hideNav');
 		$("body").toggleClass("navbarCollapsed");
 		$('.nav span').fadeTo('fast', 100);
 // 		$(".nav-second-level").toggleClass("in");
     }).on('mouseleave', function () {
 		$("body").toggleClass("navbarCollapsed");
 		$(".nav-second-level").removeClass("in");
-		$(".nav li").removeClass("active");
-		$('.nav span').hide();
+     	$(".metismenu li").removeClass("active");
+		$('.nav-label').hide();
+		$('.arrow').hide();
 	})
 	//
 	// Right Sidebars
@@ -39,27 +58,31 @@ $(document).ready(function () {
 	    $('#pageContent').addClass('sidebarOpen');
 	    openTask.parent().addClass('active');
 	}else{
-	   $('#pageContent').removeClass('sidebarOpen'); 
 	   openTask.parent().removeClass('active');
+	    $('#pageContent').removeClass('sidebarOpen'); 
 	}
 	//
 	openTask.on('click', function () {
+	        tasksSidebar.removeClass('tasksOpen');
             tasksSidebar.toggleClass('rOpen tasksOpen');
             notificationsSidebar.removeClass('rOpen notificationsOpen');
             $(this).parent().toggleClass('active');
             openNotifications.parent().removeClass('active');
             // 
-            //$("a.open-notifications i").removeClass('nc-icon-glyph');
-            $(openNotifications + " i").removeClass('nc-icon-glyph');
-            $(this).children('i').addClass('nc-icon-glyph');
+            $("a.open-notifications i").removeClass('nc-icon-glyph');
+            $(openNotifications + " i").removeClass('nc-icon-outline');
+            $(this).children('i').addClass('nc-icon-outline');
             //
             if(!tasksSidebar.hasClass('rOpen') ){
                 $("a.open-task i").removeClass('nc-icon-glyph');
                 $(this).removeClass('active');
             }
             if( $('.rOpen').length > 0 ){
+                $("a.open-task i").addClass('nc-icon-glyph');
 	            $('#pageContent').addClass('sidebarOpen');
 	        }else{
+	            $("a.open-task i").removeClass('nc-icon-glyph');
+	            $("a.open-task i").addClass('nc-icon-outline');
 	            $('#pageContent').removeClass('sidebarOpen'); 
 	        }
             
@@ -72,15 +95,17 @@ $(document).ready(function () {
             $(this).parent().toggleClass('active');
             openTask.parent().removeClass('active');
             // 
-            $("a.open-task i").removeClass('nc-icon-glyph');
+            // $(openNotifications + " i").removeClass('nc-icon-outline');
+            $("a.open-task i").removeClass('nc-icon-outline');
             $(this).children('i').addClass('nc-icon-glyph');
+            // $("a.open-notifications i").addClass('nc-icon-outline');
             //
             if( !notificationsSidebar.hasClass('rOpen') ){
                 $("a.open-notifications i").removeClass('nc-icon-glyph');
                 $(this).removeClass('active');
             }
             //
-            if( $('.rOpen').length > 0 ){
+            if( $('.rOpen').length >= 0 ){
 	            $('#pageContent').addClass('sidebarOpen');
 	        }else{
 	            $('#pageContent').removeClass('sidebarOpen'); 
@@ -182,47 +207,58 @@ $(document).ready(function () {
     });
     */
     //Auto complete
-     $('.form-control').on('click', function () {
-      $('.form-control').addClass('search-bar');
-    });
-    $('.form-control').mouseenter( function () {
-    $('.k-state-focused').removeClass('k-state-hover');
-    });
-      $('.form-control').mouseleave( function () {
-      $('.k-state-focused').removeClass('k-state-hover');
-      $('.form-control').removeClass('search-bar');
+    //  $('.form-control').on('click', function () {
+    //   $('.form-control').addClass('search-bar');
+    // });
+    // $('.form-control').mouseenter( function () {
+    // $('.k-state-focused').removeClass('k-state-hover');
+    // });
+    //   $('.form-control').mouseleave( function () {
+    //   $('.k-state-focused').removeClass('k-state-hover');
+    //   $('.form-control').removeClass('search-bar');
       
-    });
-    
-  
-    
-    var data = [
-                     "GTFP AB Burkina",
-                     "AB Bank Rwanda",
-                     "AEFB Tacks Farm",
-                     "GMAC WHLPRST Farm",
-                       "PRST Farm"
+    // });
+    // var data = [
                             
-                        ];
+    //                     ];
 
-                    //create AutoComplete UI component
-                    $("#top-search").kendoAutoComplete({
-                        dataSource: data,
-                        filter: "startswith",
-                        placeholder: "Search by Keyword",
-                        separator: ", "
-                    });
-                    //
-//       	$("nav li").click(function() {
-// 		$("nav li").removeClass("activeNav"); // Remove any active class
-// 		$(this).addClass("activeNav"); // Add "current" class to selected tab
-		
-// 		$("div.sidebar-collapse div").hide(); // Hide all content
-
-//     // Find the href attribute value to identify the active tab + content:
-// 		var activeTab = $(this).find("a").attr("href"); 
-// 		$(activeTab).fadeIn(); //Fade in the active ID content
-// 	}); // end click method
+    //                 //create AutoComplete UI component
+    //                 $("#top-search").kendoAutoComplete({
+    //                     dataSource: data,
+    //                     filter: "startswith",
+    //                     placeholder: "Search by Keyword",
+    //                     separator: ", "
+    //                 });
+       var availableTags = [
+      "GTFP AB Burkina",
+      "AB Bank Rwanda",
+      "AEFB Tacks Farm",
+      "GMAC WHLPRST Farm",
+      "PRST Farm",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#top-search" ).autocomplete({
+       classes: {
+    "ui-autocomplete": "search-auto"
+     },
+      source: availableTags
+    });
+        
          //
          $("nav li.nav_green_1").click(function() {
 		$("nav li.nav_blue").removeClass("active activeNav");

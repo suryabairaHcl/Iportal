@@ -235,8 +235,10 @@ ul.unstyled, ol.unstyled {
 
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
   border-top: 1px solid $border-color;
+  font-size: 14px;
+  font-family: Roboto;
   line-height: 1.42857;
-  padding: 8px;
+  padding: 18px 18px 18px 6px;
   vertical-align: top;
 }
 
@@ -573,7 +575,11 @@ table.table-mail tr td {
 
 // NC Icons
 .nc-icon-outline{
-	color:#fff;
+// 	color:#007ebf;
+}
+
+i.nc-icon-outline.ui-1_zoom {
+    color: #007ebf;
 }
 // Flex layout
 .pageWrap{
@@ -584,5 +590,9 @@ table.table-mail tr td {
 #pageContent{
   //flex: 1 0 100%;
   width: 100%;
-  margin-left: $side-nav-width-minimized;
+  margin-left: $side-nav-width-minimized + 30px;
+}
+
+div#tasks-sidebar {
+    background: #E6EBEF;
 }
